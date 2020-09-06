@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Buy Cloths at lowest price" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="../themes/css/bootstrappage.css" rel="stylesheet" />
+    <link href="../themes/css/flexslider.css" rel="stylesheet" />
+    <link href="../themes/css/main.css" rel="stylesheet" />
+    <script src="../themes/js/jquery-1.7.2.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../themes/js/superfish.js"></script>
+    <script src="../themes/js/jquery.scrolltotop.js"></script>
+    <title>cloth shop</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="../themes/js/common.js"></script>
+    <script src="../themes/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(document).ready(function () {
+          $(".flexslider").flexslider({
+            animation: "fade",
+            slideshowSpeed: 4000,
+            animationSpeed: 600,
+            controlNav: false,
+            directionNav: true,
+            controlsContainer: ".flex-container", // the container that holds the flexslider
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
