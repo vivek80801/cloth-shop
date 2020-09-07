@@ -9,7 +9,7 @@ export interface gloabalContext {
 }
 
 export const GlobalContext = React.createContext<any | gloabalContext>(
-  allProducts
+  allProducts,
 );
 
 export const GlobalProvider: React.FC = (props): JSX.Element => {

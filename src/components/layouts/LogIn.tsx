@@ -1,10 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { AuthContext, authContext } from "../../contexts/authContext";
+import { MessageContext, messageContext } from "../../contexts/messageContext";
+import { LOG_IN } from "../../typesOfReducers/typesOfAuthReducer";
 
 const LogIn: React.FC = (): JSX.Element => {
+  const [userName, setUserName] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  const persons = React.useContext<authContext>(AuthContext);
+  const messages = React.useContext<messageContext>(MessageContext);
   return (
     <div className="span5">
       <h4 className="title">
+        {messages.msg.map((message, idx) => (
+          <div
+            className={`alert alert-dismissible alert-${
+              message.err ? "warning" : "success"
+            }`}
+            role="alert"
+            key={idx}
+          >
+            {message.msg}
+            <button className="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        ))}
         <span className="text">
           <strong>Login</strong> Form
         </span>
@@ -19,6 +40,7 @@ const LogIn: React.FC = (): JSX.Element => {
               placeholder="Enter your username"
               id="username"
               className="input-xlarge"
+              onChange={(e) => setUserName(e.target.value)}
             />
           </div>
         </div>
@@ -30,18 +52,25 @@ const LogIn: React.FC = (): JSX.Element => {
               placeholder="Enter your password"
               id="password"
               className="input-xlarge"
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
         </div>
         <div className="control-group">
-          <Link
-            to="#"
-          >
+          <Link to="#">
             <input
               tabIndex={3}
               className="btn btn-inverse large"
               type="submit"
               value="Sign into your account"
+              onClick={() =>
+                persons.dispatchAuth({
+                  type: LOG_IN,
+                  name: userName,
+                  password: password,
+                  dispatchMessage: messages.dispatchMessage,
+                })
+              }
             />
           </Link>
           <hr />
