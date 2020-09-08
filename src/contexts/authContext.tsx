@@ -3,7 +3,7 @@ import { persons, user } from "../data/users";
 import { authReducer, authAction } from "../reducers/authReducer";
 
 export interface authContext {
-  persons: user[]
+  users: user[]
   dispatchAuth: React.Dispatch<authAction>;
 }
 
@@ -12,9 +12,9 @@ export const AuthContext = React.createContext<any | authContext>(
 );
 
 export const AuthProvider: React.FC = (props): JSX.Element => {
-  const [products, dispatchAuth] = React.useReducer(authReducer, persons);
+  const [users, dispatchAuth] = React.useReducer(authReducer, persons);
   return (
-    <AuthContext.Provider value={{ products, dispatchAuth }}>
+    <AuthContext.Provider value={{ users, dispatchAuth }}>
       {props.children}
     </AuthContext.Provider>
   );

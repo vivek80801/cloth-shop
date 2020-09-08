@@ -1,18 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { AuthContext, authContext } from "../../contexts/authContext";
-import { MessageContext, messageContext } from "../../contexts/messageContext";
 import { LOG_IN } from "../../typesOfReducers/typesOfAuthReducer";
+
+export interface message {
+  msg: string;
+  err: boolean;
+}
 
 const LogIn: React.FC = (): JSX.Element => {
   const [userName, setUserName] = React.useState("");
   const [password, setPassword] = React.useState("");
-  const persons = React.useContext<authContext>(AuthContext);
-  const messages = React.useContext<messageContext>(MessageContext);
+  const [messages, setMessages] = React.useState<message[]>([]);
+  const { users, dispatchAuth } = React.useContext<authContext>(AuthContext);
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setMessages([]);
+    }, 5000);
+    return () => {
+      clearTimeout(10);
+    };
+  }, [messages]);
+
   return (
     <div className="span5">
       <h4 className="title">
-        {messages.msg.map((message, idx) => (
+        {messages.map((message, idx) => (
           <div
             className={`alert alert-dismissible alert-${
               message.err ? "warning" : "success"
@@ -63,14 +77,43 @@ const LogIn: React.FC = (): JSX.Element => {
               className="btn btn-inverse large"
               type="submit"
               value="Sign into your account"
-              onClick={() =>
-                persons.dispatchAuth({
-                  type: LOG_IN,
-                  name: userName,
-                  password: password,
-                  dispatchMessage: messages.dispatchMessage,
-                })
-              }
+              onClick={() => {
+                if (password === "" || userName === "") {
+                  setMessages([
+                    ...messages,
+                    { msg: "Please fill the form", err: true },
+                  ]);
+                  return messages;
+                } else {
+                  users.map((person) => {
+                    if (person.auth) {
+                      setMessages([
+                        ...messages,
+                        { msg: "You are already Logged in", err: true },
+                      ]);
+                      return messages;
+                    } else if (
+                      person.name === userName &&
+                      person.password === password
+                    ) {
+                      setMessages([
+                        ...messages,
+                        { msg: "You are Logged in", err: false },
+                      ]);
+                      return dispatchAuth({
+                        type: LOG_IN,
+                        id: person.id,
+                      });
+                    } else {
+                      setMessages([
+                        ...messages,
+                        { msg: "Username or Password is wrong", err: true },
+                      ]);
+                      return messages;
+                    }
+                  });
+                }
+              }}
             />
           </Link>
           <hr />

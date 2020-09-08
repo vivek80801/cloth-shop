@@ -5,17 +5,14 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { GlobalProvider } from "./contexts/globalContext";
 import { AuthProvider } from "./contexts/authContext";
-import { MessageProvider } from "./contexts/messageContext";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <GlobalProvider>
-        <MessageProvider>
           <AuthProvider>
             <App />
           </AuthProvider>
-        </MessageProvider>
       </GlobalProvider>
     </Router>
   </React.StrictMode>,
