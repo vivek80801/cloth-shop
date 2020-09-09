@@ -3,7 +3,7 @@ import { featureProducts } from '../data/featureProducts'
 export const newProducts: featureProducts[] = [
     {
         id: 1,
-        img: "themes/images/ladies/9.jpg",
+        img: "themes/images/ladies/masha-sidorova-5GIurP01pN8-unsplash.jpg",
         title: "Fusce id molestie massa",
         category: "Phasellus consequat",
         price: 341,
@@ -11,9 +11,9 @@ export const newProducts: featureProducts[] = [
         product_code: "Product 14",
         reward_point: 1,
         avaiblity: true,
-         inCart: false,
-        best_seller:false,
-        qty:1,
+        inCart: false,
+        best_seller: false,
+        qty: 1,
         related_products: [
             {
                 id: 4
@@ -25,8 +25,8 @@ export const newProducts: featureProducts[] = [
                 id: 2
             }
         ],
-        addition_information:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details:`Sed ut perspiciatis unde omnis iste natus error sit
+        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
+        details: `Sed ut perspiciatis unde omnis iste natus error sit
         voluptatem accusantium doloremque laudantium, totam
         rem aperiam, eaque ipsa quae ab illo inventore
         veritatis et quasi architecto beatae vitae dicta sunt
@@ -38,23 +38,12 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-             {
-                img:"themes/images/ladies/2.jpg"
-            },
-            {
-                img:"themes/images/ladies/3.jpg"
-            },
-            {
-                img:"themes/images/ladies/4.jpg"
-            },
-            {
-                img:"themes/images/ladies/5.jpg"
-            }
+            
         ]
     },
     {
         id: 2,
-        img: "themes/images/ladies/8.jpg",
+        img: "themes/images/ladies/alice-alinari-MS371wlcGPo-unsplash.jpg",
         title: "Praesent tempor sem",
         category: "Erat gravida",
         price: 28,
@@ -62,9 +51,9 @@ export const newProducts: featureProducts[] = [
         product_code: "Product 14",
         reward_point: 1,
         avaiblity: true,
-         inCart: false,
-        best_seller:false,
-        qty:1,
+        inCart: false,
+        best_seller: false,
+        qty: 1,
         related_products: [
             {
                 id: 4
@@ -76,8 +65,8 @@ export const newProducts: featureProducts[] = [
                 id: 2
             }
         ],
-        addition_information:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details:`Sed ut perspiciatis unde omnis iste natus error sit
+        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
+        details: `Sed ut perspiciatis unde omnis iste natus error sit
         voluptatem accusantium doloremque laudantium, totam
         rem aperiam, eaque ipsa quae ab illo inventore
         veritatis et quasi architecto beatae vitae dicta sunt
@@ -89,23 +78,12 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-             {
-                img:"themes/images/ladies/2.jpg"
-            },
-            {
-                img:"themes/images/ladies/3.jpg"
-            },
-            {
-                img:"themes/images/ladies/4.jpg"
-            },
-            {
-                img:"themes/images/ladies/5.jpg"
-            }
+            
         ]
     },
     {
         id: 3,
-        img: "themes/images/ladies/7.jpg",
+        img: "themes/images/ladies/dmitry-vechorko-50uhRqRVJM8-unsplash.jpg",
         title: "Wuam ultrices rutrum",
         category: "Suspendisse aliquet",
         price: 341,
@@ -113,9 +91,9 @@ export const newProducts: featureProducts[] = [
         product_code: "Product 14",
         reward_point: 1,
         avaiblity: true,
-         inCart: false,
-        best_seller:false,
-        qty:1,
+        inCart: false,
+        best_seller: false,
+        qty: 1,
         related_products: [
             {
                 id: 4
@@ -127,8 +105,8 @@ export const newProducts: featureProducts[] = [
                 id: 2
             }
         ],
-        addition_information:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details:`Sed ut perspiciatis unde omnis iste natus error sit
+        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
+        details: `Sed ut perspiciatis unde omnis iste natus error sit
         voluptatem accusantium doloremque laudantium, totam
         rem aperiam, eaque ipsa quae ab illo inventore
         veritatis et quasi architecto beatae vitae dicta sunt
@@ -140,23 +118,12 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-             {
-                img:"themes/images/ladies/2.jpg"
-            },
-            {
-                img:"themes/images/ladies/3.jpg"
-            },
-            {
-                img:"themes/images/ladies/4.jpg"
-            },
-            {
-                img:"themes/images/ladies/5.jpg"
-            }
+            
         ]
     },
     {
         id: 4,
-        img: "themes/images/ladies/6.jpg",
+        img: "themes/images/ladies/sergio-souza-5WsBXDhI5LE-unsplash.jpg",
         title: "Praesent tempor sem sodales",
         category: "Nam imperdiet",
         price: 49,
@@ -164,9 +131,9 @@ export const newProducts: featureProducts[] = [
         product_code: "Product 14",
         reward_point: 1,
         avaiblity: true,
-         inCart: false,
-        best_seller:false,
-        qty:1,
+        inCart: false,
+        best_seller: false,
+        qty: 1,
         related_products: [
             {
                 id: 4
@@ -178,8 +145,8 @@ export const newProducts: featureProducts[] = [
                 id: 2
             }
         ],
-        addition_information:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details:`Sed ut perspiciatis unde omnis iste natus error sit
+        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
+        details: `Sed ut perspiciatis unde omnis iste natus error sit
         voluptatem accusantium doloremque laudantium, totam
         rem aperiam, eaque ipsa quae ab illo inventore
         veritatis et quasi architecto beatae vitae dicta sunt
@@ -191,23 +158,12 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-             {
-                img:"themes/images/ladies/2.jpg"
-            },
-            {
-                img:"themes/images/ladies/3.jpg"
-            },
-            {
-                img:"themes/images/ladies/4.jpg"
-            },
-            {
-                img:"themes/images/ladies/5.jpg"
-            }
+            
         ]
     },
     {
         id: 5,
-        img: "themes/images/ladies/1.jpg",
+        img: "themes/images/ladies/cleyton-ewerton-R0qWkze6t3A-unsplash.jpg",
         title: "Fusce id molestie massa",
         category: "Congue diam congue",
         price: 35,
@@ -215,9 +171,9 @@ export const newProducts: featureProducts[] = [
         product_code: "Product 14",
         reward_point: 1,
         avaiblity: true,
-         inCart: false,
-        best_seller:false,
-        qty:1,
+        inCart: false,
+        best_seller: false,
+        qty: 1,
         related_products: [
             {
                 id: 4
@@ -229,8 +185,8 @@ export const newProducts: featureProducts[] = [
                 id: 2
             }
         ],
-        addition_information:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details:`Sed ut perspiciatis unde omnis iste natus error sit
+        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
+        details: `Sed ut perspiciatis unde omnis iste natus error sit
         voluptatem accusantium doloremque laudantium, totam
         rem aperiam, eaque ipsa quae ab illo inventore
         veritatis et quasi architecto beatae vitae dicta sunt
@@ -242,23 +198,14 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-             {
-                img:"themes/images/ladies/2.jpg"
-            },
             {
-                img:"themes/images/ladies/3.jpg"
-            },
-            {
-                img:"themes/images/ladies/4.jpg"
-            },
-            {
-                img:"themes/images/ladies/5.jpg"
+                img: "themes/images/ladies/cleyton-ewerton-W1oUUHqqwXw-unsplash.jpg"
             }
         ]
     },
     {
         id: 6,
-        img: "themes/images/ladies/2.jpg",
+        img: "themes/images/ladies/naeim-jafari-6Xai7XxOgBc-unsplash.jpg",
         title: "Tempor sem sodales",
         category: "Gravida placerat",
         price: 61,
@@ -266,9 +213,9 @@ export const newProducts: featureProducts[] = [
         product_code: "Product 14",
         reward_point: 1,
         avaiblity: true,
-         inCart: false,
-        best_seller:false,
-        qty:1,
+        inCart: false,
+        best_seller: false,
+        qty: 1,
         related_products: [
             {
                 id: 4
@@ -280,8 +227,8 @@ export const newProducts: featureProducts[] = [
                 id: 2
             }
         ],
-        addition_information:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details:`Sed ut perspiciatis unde omnis iste natus error sit
+        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
+        details: `Sed ut perspiciatis unde omnis iste natus error sit
         voluptatem accusantium doloremque laudantium, totam
         rem aperiam, eaque ipsa quae ab illo inventore
         veritatis et quasi architecto beatae vitae dicta sunt
@@ -293,23 +240,11 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-             {
-                img:"themes/images/ladies/2.jpg"
-            },
-            {
-                img:"themes/images/ladies/3.jpg"
-            },
-            {
-                img:"themes/images/ladies/4.jpg"
-            },
-            {
-                img:"themes/images/ladies/5.jpg"
-            }
         ]
     },
     {
         id: 7,
-        img: "themes/images/ladies/3.jpg",
+        img: "themes/images/ladies/khaled-ghareeb-Oj4HsmI7JDk-unsplash.jpg",
         title: "Quam ultrices rutrum",
         category: "Orci et nisl iaculis",
         price: 233,
@@ -317,9 +252,9 @@ export const newProducts: featureProducts[] = [
         product_code: "Product 14",
         reward_point: 1,
         avaiblity: true,
-         inCart: false,
-        best_seller:false,
-        qty:1,
+        inCart: false,
+        best_seller: false,
+        qty: 1,
         related_products: [
             {
                 id: 4
@@ -331,8 +266,8 @@ export const newProducts: featureProducts[] = [
                 id: 2
             }
         ],
-        addition_information:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details:`Sed ut perspiciatis unde omnis iste natus error sit
+        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
+        details: `Sed ut perspiciatis unde omnis iste natus error sit
         voluptatem accusantium doloremque laudantium, totam
         rem aperiam, eaque ipsa quae ab illo inventore
         veritatis et quasi architecto beatae vitae dicta sunt
@@ -344,23 +279,12 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-             {
-                img:"themes/images/ladies/2.jpg"
-            },
-            {
-                img:"themes/images/ladies/3.jpg"
-            },
-            {
-                img:"themes/images/ladies/4.jpg"
-            },
-            {
-                img:"themes/images/ladies/5.jpg"
-            }
+            
         ]
     },
     {
         id: 8,
-        img: "themes/images/ladies/4.jpg",
+        img: "themes/images/ladies/valerie-elash-o1Ic6JdypmA-unsplash.jpg",
         title: "Tempor sem sodales",
         category: "Urna nec lectus mollis",
         price: 134,
@@ -368,9 +292,9 @@ export const newProducts: featureProducts[] = [
         product_code: "Product 14",
         reward_point: 1,
         avaiblity: true,
-         inCart: false,
-        best_seller:false,
-        qty:1,
+        inCart: false,
+        best_seller: false,
+        qty: 1,
         related_products: [
             {
                 id: 4
@@ -382,8 +306,8 @@ export const newProducts: featureProducts[] = [
                 id: 2
             }
         ],
-        addition_information:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details:`Sed ut perspiciatis unde omnis iste natus error sit
+        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
+        details: `Sed ut perspiciatis unde omnis iste natus error sit
         voluptatem accusantium doloremque laudantium, totam
         rem aperiam, eaque ipsa quae ab illo inventore
         veritatis et quasi architecto beatae vitae dicta sunt
@@ -395,23 +319,12 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-             {
-                img:"themes/images/ladies/2.jpg"
-            },
-            {
-                img:"themes/images/ladies/3.jpg"
-            },
-            {
-                img:"themes/images/ladies/4.jpg"
-            },
-            {
-                img:"themes/images/ladies/5.jpg"
-            }
+            
         ]
     },
     {
         id: 9,
-        img: "themes/images/ladies/5.jpg",
+        img: "themes/images/ladies/meritt-thomas-MQ9U2GFnnDc-unsplash.jpg",
         title: "Luctus quam ultrices",
         category: "Suspendisse aliquet",
         price: 261,
@@ -419,9 +332,9 @@ export const newProducts: featureProducts[] = [
         product_code: "Product 14",
         reward_point: 1,
         avaiblity: true,
-         inCart: false,
-        best_seller:false,
-        qty:1,
+        inCart: false,
+        best_seller: false,
+        qty: 1,
         related_products: [
             {
                 id: 4
@@ -433,8 +346,8 @@ export const newProducts: featureProducts[] = [
                 id: 2
             }
         ],
-        addition_information:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details:`Sed ut perspiciatis unde omnis iste natus error sit
+        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
+        details: `Sed ut perspiciatis unde omnis iste natus error sit
         voluptatem accusantium doloremque laudantium, totam
         rem aperiam, eaque ipsa quae ab illo inventore
         veritatis et quasi architecto beatae vitae dicta sunt
@@ -446,18 +359,7 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-             {
-                img:"themes/images/ladies/2.jpg"
-            },
-            {
-                img:"themes/images/ladies/3.jpg"
-            },
-            {
-                img:"themes/images/ladies/4.jpg"
-            },
-            {
-                img:"themes/images/ladies/5.jpg"
-            }
+            
         ]
     },
 ]

@@ -12,7 +12,7 @@ export interface featureProducts {
     details: string,
     qty: number,
     addition_information: string,
-    best_seller:boolean,
+    best_seller: boolean,
     related_imgs: relatedImgs[],
     related_products: relatedProducts[]
 }
@@ -28,7 +28,7 @@ interface relatedProducts {
 export const saleTags: featureProducts[] = [
     {
         id: 18,
-        img: "themes/images/ladies/1.jpg",
+        img: "themes/images/ladies/10.jpg",
         title: "Ut wisi enim ad",
         category: "Commodo consequat",
         price: 17.25,
@@ -37,7 +37,7 @@ export const saleTags: featureProducts[] = [
         reward_point: 1,
         avaiblity: true,
         inCart: false,
-        best_seller:true,
+        best_seller: true,
         qty: 1,
         related_products: [
             {
@@ -64,23 +64,12 @@ export const saleTags: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            {
-                img: "themes/images/ladies/2.jpg"
-            },
-            {
-                img: "themes/images/ladies/3.jpg"
-            },
-            {
-                img: "themes/images/ladies/4.jpg"
-            },
-            {
-                img: "themes/images/ladies/5.jpg"
-            }
+            
         ]
     },
     {
         id: 19,
-        img: "themes/images/ladies/2.jpg",
+        img: "themes/images/ladies/laura-chouette-79UccCHqTJA-unsplash.jpg",
         title: "Quis nostrud exerci tation",
         category: "Quis nostrud",
         price: 32.50,
@@ -89,7 +78,7 @@ export const saleTags: featureProducts[] = [
         reward_point: 1,
         avaiblity: true,
         inCart: false,
-        best_seller:true,
+        best_seller: true,
         qty: 1,
         related_products: [
             {
@@ -116,22 +105,16 @@ export const saleTags: featureProducts[] = [
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
             {
-                img: "themes/images/ladies/2.jpg"
+                img: "themes/images/ladies/laura-chouette-lyogsIO8cHE-unsplash.jpg"
             },
             {
-                img: "themes/images/ladies/3.jpg"
+                img: "themes/images/ladies/laura-chouette-qAeP0GPLeNE-unsplash.jpg"
             },
-            {
-                img: "themes/images/ladies/4.jpg"
-            },
-            {
-                img: "themes/images/ladies/5.jpg"
-            }
         ]
     },
     {
         id: 20,
-        img: "themes/images/ladies/3.jpg",
+        img: "themes/images/ladies/engin-akyurt-N7YaZf7szz0-unsplash.jpg",
         title: "Know exactly turned",
         category: " Quis nostrud",
         price: 14.20,
@@ -140,7 +123,7 @@ export const saleTags: featureProducts[] = [
         reward_point: 1,
         avaiblity: true,
         inCart: false,
-        best_seller:true,
+        best_seller: true,
         qty: 1,
         related_products: [
             {
@@ -166,23 +149,12 @@ export const saleTags: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            {
-                img: "themes/images/ladies/2.jpg"
-            },
-            {
-                img: "themes/images/ladies/3.jpg"
-            },
-            {
-                img: "themes/images/ladies/4.jpg"
-            },
-            {
-                img: "themes/images/ladies/5.jpg"
-            }
+            
         ]
     },
     {
         id: 21,
-        img: "themes/images/ladies/4.jpg",
+        img: "themes/images/ladies/vladimir-fedotov-s76ACd3Am6A-unsplash.jpg",
         title: "You think fast",
         category: "World once",
         price: 31.45,
@@ -191,7 +163,7 @@ export const saleTags: featureProducts[] = [
         reward_point: 1,
         avaiblity: true,
         inCart: false,
-        best_seller:true,
+        best_seller: true,
         qty: 1,
         related_products: [
             {
@@ -217,18 +189,7 @@ export const saleTags: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            {
-                img: "themes/images/ladies/2.jpg"
-            },
-            {
-                img: "themes/images/ladies/3.jpg"
-            },
-            {
-                img: "themes/images/ladies/4.jpg"
-            },
-            {
-                img: "themes/images/ladies/5.jpg"
-            }
+            
         ]
     },
 ]
@@ -236,7 +197,7 @@ export const saleTags: featureProducts[] = [
 export const products: featureProducts[] = [
     {
         id: 22,
-        img: "themes/images/ladies/5.jpg",
+        img: "themes/images/ladies/rodolfo-marques-0j-y7NTkyKM-unsplash.jpg",
         title: "Know exactly",
         category: "Quis nostrud",
         price: 22.30,
@@ -245,7 +206,7 @@ export const products: featureProducts[] = [
         reward_point: 1,
         avaiblity: true,
         inCart: false,
-        best_seller:false,
+        best_seller: false,
         qty: 1,
         related_products: [
             {
@@ -271,23 +232,12 @@ export const products: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            {
-                img: "themes/images/ladies/2.jpg"
-            },
-            {
-                img: "themes/images/ladies/3.jpg"
-            },
-            {
-                img: "themes/images/ladies/4.jpg"
-            },
-            {
-                img: "themes/images/ladies/5.jpg"
-            }
+            
         ]
     },
     {
         id: 23,
-        img: "themes/images/ladies/6.jpg",
+        img: "themes/images/ladies/anna1991anna-w4Wv58_cBXM-unsplash.jpg",
         title: "Ut wisi enim ad",
         category: "Commodo consequat",
         price: 40.25,
@@ -296,7 +246,7 @@ export const products: featureProducts[] = [
         reward_point: 1,
         avaiblity: true,
         inCart: false,
-        best_seller:false,
+        best_seller: false,
         qty: 1,
         related_products: [
             {
@@ -322,23 +272,12 @@ export const products: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            {
-                img: "themes/images/ladies/2.jpg"
-            },
-            {
-                img: "themes/images/ladies/3.jpg"
-            },
-            {
-                img: "themes/images/ladies/4.jpg"
-            },
-            {
-                img: "themes/images/ladies/5.jpg"
-            }
+            
         ]
     },
     {
         id: 24,
-        img: "themes/images/ladies/7.jpg",
+        img: "themes/images/ladies/febrian-zakaria-hx-8B01BQ6Q-unsplash.jpg",
         title: "You think water",
         category: "World once",
         price: 10.45,
@@ -347,7 +286,7 @@ export const products: featureProducts[] = [
         reward_point: 1,
         avaiblity: true,
         inCart: false,
-        best_seller:false,
+        best_seller: false,
         qty: 1,
         related_products: [
             {
@@ -374,22 +313,13 @@ export const products: featureProducts[] = [
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
             {
-                img: "themes/images/ladies/2.jpg"
-            },
-            {
-                img: "themes/images/ladies/3.jpg"
-            },
-            {
-                img: "themes/images/ladies/4.jpg"
-            },
-            {
-                img: "themes/images/ladies/5.jpg"
+                img: "themes/images/ladies/febrian-zakaria-NzG0fulVX64-unsplash.jpg"
             }
         ]
     },
     {
         id: 25,
-        img: "themes/images/ladies/8.jpg",
+        img: "themes/images/ladies/p-t-ohehdpoIKwI-unsplash.jpg",
         title: " Quis nostrud exerci",
         category: "Quis nostrud",
         price: 35.50,
@@ -398,7 +328,7 @@ export const products: featureProducts[] = [
         reward_point: 1,
         avaiblity: false,
         inCart: false,
-        best_seller:false,
+        best_seller: false,
         qty: 1,
         related_products: [
             {
@@ -424,18 +354,7 @@ export const products: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            {
-                img: "themes/images/ladies/2.jpg"
-            },
-            {
-                img: "themes/images/ladies/3.jpg"
-            },
-            {
-                img: "themes/images/ladies/4.jpg"
-            },
-            {
-                img: "themes/images/ladies/5.jpg"
-            }
+            
         ]
 
     },

@@ -6,10 +6,10 @@ const Slider: React.FC = (): JSX.Element => {
       <div className="flexslider">
         <ul className="slides">
           <li>
-            <img src="themes/images/carousel/banner-1.jpg" alt="" />
+            <img src="../themes/images/carousel/banner-1.jpg" alt="banner-1" />
           </li>
           <li>
-            <img src="themes/images/carousel/banner-2.jpg" alt="" />
+            <img src="../themes/images/carousel/banner-2.jpg" alt="banner-2" />
             <div className="intro">
               <h1>Mid season sale</h1>
               <p>

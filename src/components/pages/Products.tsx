@@ -8,7 +8,7 @@ import Clients from "../layouts/Clients";
 
 const Products: React.FC = (): JSX.Element => {
   return (
-    <div>
+    <>
       <Slider />
       <HeaderText />
       <section className="main-content">
@@ -22,7 +22,7 @@ const Products: React.FC = (): JSX.Element => {
         </div>
       </section>
       <Clients />
-    </div>
+    </>
   );
 };
 

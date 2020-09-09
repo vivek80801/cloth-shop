@@ -3,7 +3,7 @@ import { featureProducts } from './featureProducts'
 export const saleTags: featureProducts[] = [
     {
         id: 10,
-        img: "themes/images/cloth/bootstrap-women-ware2.jpg",
+        img: "themes/images/cloth/emmanuel-bior-zP95BaiDAEY-unsplash.jpg",
         title: "Ut wisi enim ad",
         category: "Commodo consequat",
         price: 25.50,
@@ -54,7 +54,7 @@ export const saleTags: featureProducts[] = [
     },
     {
         id: 11,
-        img: "themes/images/cloth/bootstrap-women-ware1.jpg",
+        img: "themes/images/cloth/elvis-ray-tu2gHmxKrTU-unsplash.jpg",
         title: "Quis nostrud exerci tation",
         category: "Quis nostrud",
         price: 17.55,
@@ -104,7 +104,7 @@ export const saleTags: featureProducts[] = [
         ]
     }, {
         id: 12,
-        img: "themes/images/cloth/bootstrap-women-ware6.jpg",
+        img: "themes/images/cloth/ella-arie-us6Yp3hj5oY-unsplash.jpg",
         title: "Know exactly turned",
         category: "Quis nostrud",
         price: 25.30,
@@ -154,7 +154,7 @@ export const saleTags: featureProducts[] = [
         ]
     }, {
         id: 13,
-        img: "themes/images/cloth/bootstrap-women-ware5.jpg",
+        img: "themes/images/cloth/bui-thanh-tam-Reicn7bwEN8-unsplash.jpg",
         title: "You think fast",
         category: "World once",
         price: 25.60,
@@ -208,7 +208,7 @@ export const saleTags: featureProducts[] = [
 export const products: featureProducts[] = [
     {
         id: 14,
-        img: "themes/images/cloth/bootstrap-women-ware4.jpg",
+        img: "themes/images/cloth/brdnk-vision-fGoNmrpd-Sw-unsplash.jpg",
         title: "Know exactly",
         category: "Quis nostrud",
         price: 45.50,
@@ -259,7 +259,7 @@ export const products: featureProducts[] = [
     },
     {
         id: 15,
-        img: "themes/images/cloth/bootstrap-women-ware3.jpg",
+        img: "themes/images/cloth/anna-logacheva-jmc3Mi5exRk-unsplash.jpg",
         title: "Ut wisi enim ad",
         category: "Commodo consequat",
         price: 33.50,
@@ -310,7 +310,7 @@ export const products: featureProducts[] = [
     },
     {
         id: 16,
-        img: "themes/images/cloth/bootstrap-women-ware2.jpg",
+        img: "themes/images/cloth/natalia-sobolivska-7hYPSx8cVGo-unsplash.jpg",
         title: "You think water",
         category: "World once",
         price: 45.30,
@@ -361,7 +361,7 @@ export const products: featureProducts[] = [
     },
     {
         id: 17,
-        img: "themes/images/cloth/bootstrap-women-ware1.jpg",
+        img: "themes/images/cloth/oleg-ivanov-DUTF0ShCcuE-unsplash.jpg",
         title: " Quis nostrud exerci",
         category: "Quis nostrud",
         price: 25.20,

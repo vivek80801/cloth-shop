@@ -15,11 +15,11 @@ const LogIn: React.FC = (): JSX.Element => {
   const { users, dispatchAuth } = React.useContext<authContext>(AuthContext);
 
   React.useEffect(() => {
-    setTimeout(() => {
+    const timer1 = setTimeout(() => {
       setMessages([]);
-    }, 5000);
+    }, 2000);
     return () => {
-      clearTimeout(10);
+      clearTimeout(timer1);
     };
   }, [messages]);
 
@@ -75,7 +75,7 @@ const LogIn: React.FC = (): JSX.Element => {
             <input
               tabIndex={3}
               className="btn btn-inverse large"
-              type="submit"
+              type="button"
               value="Sign into your account"
               onClick={() => {
                 if (password === "" || userName === "") {
