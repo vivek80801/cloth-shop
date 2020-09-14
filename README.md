@@ -30,7 +30,7 @@ Then `download this project` either by clicking on `code` on my [this repo](http
 ```bash
 cd cloth-app
 ```
-Nown time to `install` required dependecies
+Nown time to `install` required dependecies.
 
 ```bash
 npm install

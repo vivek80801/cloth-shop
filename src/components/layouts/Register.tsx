@@ -101,21 +101,42 @@ const Register: React.FC = (): JSX.Element => {
               },
             ]);
           } else {
-            setMessages([
-              ...messages,
-              {
-                msg: "Your account has been created and You are looged in",
-                err: false,
-              },
-            ]);
             setUserName("");
             setPassword("");
             setEmail("");
-            return persons.dispatchAuth({
-              type: REGISTER_ACCOUNT,
-              userName: userName,
-              email: email,
-              password: password,
+            persons.users.map((user) => {
+              if (userName === user.name) {
+                setMessages([
+                  ...messages,
+                  {
+                    msg: "This user is already register",
+                    err: false,
+                  },
+                ]);
+              } else if (email === user.email) {
+                setMessages([
+                  ...messages,
+                  {
+                    msg: "This email is already register",
+                    err: false,
+                  },
+                ]);
+              } else {
+                setMessages([
+                  ...messages,
+                  {
+                    msg: "Your account has been created and You are looged in",
+                    err: false,
+                  },
+                ]);
+                return persons.dispatchAuth({
+                  type: REGISTER_ACCOUNT,
+                  userName: userName,
+                  email: email,
+                  password: password,
+                });
+              }
+              return messages;
             });
           }
         }}
