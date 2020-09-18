@@ -41,21 +41,23 @@ const Details: React.FC<Props> = (props): JSX.Element => {
                     <div className="span4">
                       <Link
                         to={`../../${product.img}`}
+                        target="_blank"
                         className="thumbnail"
                         data-fancybox-group="group1"
                         title="Description 1"
                       >
-                        <img alt="lol" src={`../${product.img}`} />
+                        <img alt={product.title} src={`../${product.img}`} />
                       </Link>
                       <ul className="thumbnails small">
                         {product.related_imgs.map((related_product, index) =>
                           related_product.img ? (
                             <li className="span1" key={index}>
                               <Link
+                                target="_blank"
                                 to={`../${related_product.img}`}
+                                title="to see image click on image"
                                 className="thumbnail"
                                 data-fancybox-group="group1"
-                                title="Description 2"
                               >
                                 <img src={`../${related_product.img}`} alt="" />
                               </Link>
@@ -90,6 +92,7 @@ const Details: React.FC<Props> = (props): JSX.Element => {
                         type="number"
                         min={1}
                         className="span1"
+                        placeholder={product.qty.toString()}
                         onChange={(e) =>
                           dispatch({
                             type: QTY_OF_PRODUCT,

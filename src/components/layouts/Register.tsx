@@ -91,8 +91,7 @@ const Register: React.FC = (): JSX.Element => {
                 err: true,
               },
             ]);
-          }
-          if (!passwordCheck.test(password)) {
+          } else if (!passwordCheck.test(password)) {
             setMessages([
               ...messages,
               {
@@ -101,26 +100,25 @@ const Register: React.FC = (): JSX.Element => {
               },
             ]);
           } else {
-            setUserName("");
-            setPassword("");
-            setEmail("");
-            persons.users.map((user) => {
-              if (userName === user.name) {
+            for (let i = 0; i < persons.users.length; i++) {
+              if (persons.users[i].name === userName) {
                 setMessages([
                   ...messages,
                   {
                     msg: "This user is already register",
-                    err: false,
+                    err: true,
                   },
                 ]);
-              } else if (email === user.email) {
+               return messages
+              } else if (persons.users[i].email === email) {
                 setMessages([
                   ...messages,
                   {
                     msg: "This email is already register",
-                    err: false,
+                    err: true,
                   },
                 ]);
+               return messages
               } else {
                 setMessages([
                   ...messages,
@@ -129,6 +127,9 @@ const Register: React.FC = (): JSX.Element => {
                     err: false,
                   },
                 ]);
+                // setUserName("");
+                // setPassword("");
+                // setEmail("");
                 return persons.dispatchAuth({
                   type: REGISTER_ACCOUNT,
                   userName: userName,
@@ -136,8 +137,7 @@ const Register: React.FC = (): JSX.Element => {
                   password: password,
                 });
               }
-              return messages;
-            });
+            }
           }
         }}
       >

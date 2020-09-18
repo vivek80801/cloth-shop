@@ -53,36 +53,40 @@ const LogIn: React.FC = (): JSX.Element => {
               ...messages,
               { msg: "Please fill the form", err: true },
             ]);
-            return messages;
           } else {
-            users.map((person) => {
-              if (person.auth) {
+            for (let i = 0; i < users.length; i++) {
+              if (users[i].auth) {
                 setMessages([
                   ...messages,
                   { msg: "You are already Logged in", err: true },
                 ]);
+                setUserName("");
+                setPassword("");
                 return messages;
               } else if (
-                person.name === userName &&
-                person.password === password
+                users[i].name === userName &&
+                users[i].password === password
               ) {
                 setMessages([
                   ...messages,
                   { msg: "You are Logged in", err: false },
                 ]);
+                setUserName("");
+                setPassword("");
                 return dispatchAuth({
                   type: LOG_IN,
-                  id: person.id,
+                  id: users[i].id,
                 });
               } else {
                 setMessages([
                   ...messages,
                   { msg: "Username or Password is wrong", err: true },
                 ]);
-                return messages;
               }
-            });
+            }
           }
+          setUserName("");
+          setPassword("");
         }}
       >
         <fieldset>
@@ -94,6 +98,7 @@ const LogIn: React.FC = (): JSX.Element => {
                 placeholder="Enter your username"
                 id="username"
                 className="input-xlarge"
+                value={userName}
                 onChange={(e) => setUserName(e.target.value)}
                 required
               />
@@ -107,6 +112,7 @@ const LogIn: React.FC = (): JSX.Element => {
                 placeholder="Enter your password"
                 id="password"
                 className="input-xlarge"
+                value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />

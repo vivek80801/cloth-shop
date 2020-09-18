@@ -68,7 +68,7 @@ const Cart: React.FC = (): JSX.Element => {
                       <td>
                         <input
                           type="number"
-                          placeholder="1"
+                          placeholder={product.qty.toString()}
                           min={1}
                           onChange={(e) =>
                             dispatch({

@@ -14,16 +14,16 @@ const Navbar: React.FC = (): JSX.Element => {
               <Link to="/product">Woman</Link>
               <ul>
                 <li>
-                  <Link to="/product">Red</Link>
+                  <Link to="/product/red">Red</Link>
                 </li>
                 <li>
-                  <Link to="/product">White</Link>
+                  <Link to="/product/white">White</Link>
                 </li>
                 <li>
-                  <Link to="/product">Green</Link>
+                  <Link to="/product/green">Green</Link>
                 </li>
                 <li>
-                  <Link to="/product">Black</Link>
+                  <Link to="/product/black">Black</Link>
                 </li>
               </ul>
             </li>
