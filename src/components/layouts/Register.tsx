@@ -46,6 +46,7 @@ const Register: React.FC = (): JSX.Element => {
       <form
         onSubmit={(e) => {
           e.preventDefault();
+          let validUser = false;
           if (userName === "" || password === "" || email === "") {
             setMessages([
               ...messages,
@@ -99,7 +100,7 @@ const Register: React.FC = (): JSX.Element => {
                 err: true,
               },
             ]);
-          } else {
+          } else if (!validUser) {
             for (let i = 0; i < persons.users.length; i++) {
               if (persons.users[i].name === userName) {
                 setMessages([
@@ -109,7 +110,7 @@ const Register: React.FC = (): JSX.Element => {
                     err: true,
                   },
                 ]);
-               return messages
+                return messages;
               } else if (persons.users[i].email === email) {
                 setMessages([
                   ...messages,
@@ -118,26 +119,30 @@ const Register: React.FC = (): JSX.Element => {
                     err: true,
                   },
                 ]);
-               return messages
+                return messages;
               } else {
-                setMessages([
-                  ...messages,
-                  {
-                    msg: "Your account has been created and You are looged in",
-                    err: false,
-                  },
-                ]);
-                // setUserName("");
-                // setPassword("");
-                // setEmail("");
-                return persons.dispatchAuth({
-                  type: REGISTER_ACCOUNT,
-                  userName: userName,
-                  email: email,
-                  password: password,
-                });
+                validUser = true;
               }
             }
+          }
+          if (validUser) {
+            validUser = false;
+            setUserName("");
+            setPassword("");
+            setEmail("");
+            setMessages([
+              ...messages,
+              {
+                msg: "Your account has been created and You are looged in",
+                err: false,
+              },
+            ]);
+            return persons.dispatchAuth({
+              type: REGISTER_ACCOUNT,
+              userName: userName,
+              email: email,
+              password: password,
+            });
           }
         }}
       >

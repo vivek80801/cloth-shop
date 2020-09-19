@@ -18,7 +18,7 @@ export const authReducer = (state: user[] = persons, action: authAction) => {
             return copyState
 
         case REGISTER_ACCOUNT:
-            copyState.push({ name: action.userName !== undefined ? action.userName : "", auth: true, email: action.email !== undefined ? action.email : "", password: action.password !== undefined ? action.password : "", id: copyState.length+1 })
+            copyState.push({ id: copyState.length + 1, name: action.userName !== undefined ? action.userName : "", password: action.password !== undefined ? action.password : "", email: action.email !== undefined ? action.email : "", auth: true })
             return copyState
 
         default:
