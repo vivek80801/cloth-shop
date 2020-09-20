@@ -2,7 +2,6 @@ import React from "react";
 import SubHeader from "../layouts/SubHeader";
 import LogIn from "../layouts/LogIn";
 import ConfirmedOrder from "../layouts/ConfirmedOrder";
-import Billing from "../layouts/Billing";
 
 const CheckOut: React.FC = (): JSX.Element => {
   return (
@@ -28,19 +27,6 @@ const CheckOut: React.FC = (): JSX.Element => {
                     <LogIn/>
                   </div>
                 </div>
-              </div>
-              <div className="accordion-group">
-                <div className="accordion-heading">
-                  <a
-                    className="accordion-toggle"
-                    data-toggle="collapse"
-                    data-parent="#accordion2"
-                    href="#collapseTwo"
-                  >
-                    Account &amp; Billing Details
-                  </a>
-                </div>
-                <Billing/>
               </div>
               <ConfirmedOrder/>
             </div>

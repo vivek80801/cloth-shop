@@ -1,332 +1,12 @@
-import { featureProducts } from '../data/featureProducts'
+import { featureProducts } from "./featureProducts";
 
-export const newProducts: featureProducts[] = [
+export const kidsProducts: featureProducts[] = [
     {
-        id: 1,
-        img: "themes/images/ladies/masha-sidorova-5GIurP01pN8-unsplash.jpg",
-        title: "Fusce id molestie massa",
-        category: "Phasellus consequat",
-        price: 341,
-        brand: "Apple",
-        product_code: "Product 14",
-        reward_point: 1,
-        avaiblity: true,
-        inCart: false,
-        best_seller: false,
-        qty: 1,
-        related_products: [
-            {
-                id: 4
-            },
-            {
-                id: 3
-            },
-            {
-                id: 2
-            }
-        ],
-        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details: `Sed ut perspiciatis unde omnis iste natus error sit
-        voluptatem accusantium doloremque laudantium, totam
-        rem aperiam, eaque ipsa quae ab illo inventore
-        veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas
-        sit aspernatur aut odit aut fugit, sed quia
-        consequuntur magni dolores eos qui ratione voluptatem
-        sequi nesciunt. Neque porro quisquam est, qui dolorem
-        ipsum quia dolor sit amet, consectetur, adipisci
-        velit, sed quia non numquam eius modi tempora incidunt
-        ut labore et dolore magnam aliquam quaerat voluptatem`,
-        related_imgs: [
-            
-        ]
-    },
-    {
-        id: 2,
-        img: "themes/images/ladies/alice-alinari-MS371wlcGPo-unsplash.jpg",
-        title: "Praesent tempor sem",
-        category: "Erat gravida",
-        price: 28,
-        brand: "Apple",
-        product_code: "Product 14",
-        reward_point: 1,
-        avaiblity: true,
-        inCart: false,
-        best_seller: false,
-        qty: 1,
-        related_products: [
-            {
-                id: 4
-            },
-            {
-                id: 3
-            },
-            {
-                id: 2
-            }
-        ],
-        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details: `Sed ut perspiciatis unde omnis iste natus error sit
-        voluptatem accusantium doloremque laudantium, totam
-        rem aperiam, eaque ipsa quae ab illo inventore
-        veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas
-        sit aspernatur aut odit aut fugit, sed quia
-        consequuntur magni dolores eos qui ratione voluptatem
-        sequi nesciunt. Neque porro quisquam est, qui dolorem
-        ipsum quia dolor sit amet, consectetur, adipisci
-        velit, sed quia non numquam eius modi tempora incidunt
-        ut labore et dolore magnam aliquam quaerat voluptatem`,
-        related_imgs: [
-            
-        ]
-    },
-    {
-        id: 3,
-        img: "themes/images/ladies/dmitry-vechorko-50uhRqRVJM8-unsplash.jpg",
-        title: "Wuam ultrices rutrum",
-        category: "Suspendisse aliquet",
-        price: 341,
-        brand: "Apple",
-        product_code: "Product 14",
-        reward_point: 1,
-        avaiblity: true,
-        inCart: false,
-        best_seller: false,
-        qty: 1,
-        related_products: [
-            {
-                id: 4
-            },
-            {
-                id: 3
-            },
-            {
-                id: 2
-            }
-        ],
-        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details: `Sed ut perspiciatis unde omnis iste natus error sit
-        voluptatem accusantium doloremque laudantium, totam
-        rem aperiam, eaque ipsa quae ab illo inventore
-        veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas
-        sit aspernatur aut odit aut fugit, sed quia
-        consequuntur magni dolores eos qui ratione voluptatem
-        sequi nesciunt. Neque porro quisquam est, qui dolorem
-        ipsum quia dolor sit amet, consectetur, adipisci
-        velit, sed quia non numquam eius modi tempora incidunt
-        ut labore et dolore magnam aliquam quaerat voluptatem`,
-        related_imgs: [
-            
-        ]
-    },
-    {
-        id: 4,
-        img: "themes/images/ladies/sergio-souza-5WsBXDhI5LE-unsplash.jpg",
-        title: "Praesent tempor sem sodales",
-        category: "Nam imperdiet",
-        price: 49,
-        brand: "Apple",
-        product_code: "Product 14",
-        reward_point: 1,
-        avaiblity: true,
-        inCart: false,
-        best_seller: false,
-        qty: 1,
-        related_products: [
-            {
-                id: 4
-            },
-            {
-                id: 3
-            },
-            {
-                id: 2
-            }
-        ],
-        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details: `Sed ut perspiciatis unde omnis iste natus error sit
-        voluptatem accusantium doloremque laudantium, totam
-        rem aperiam, eaque ipsa quae ab illo inventore
-        veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas
-        sit aspernatur aut odit aut fugit, sed quia
-        consequuntur magni dolores eos qui ratione voluptatem
-        sequi nesciunt. Neque porro quisquam est, qui dolorem
-        ipsum quia dolor sit amet, consectetur, adipisci
-        velit, sed quia non numquam eius modi tempora incidunt
-        ut labore et dolore magnam aliquam quaerat voluptatem`,
-        related_imgs: [
-            
-        ]
-    },
-    {
-        id: 5,
-        img: "themes/images/ladies/cleyton-ewerton-R0qWkze6t3A-unsplash.jpg",
-        title: "Fusce id molestie massa",
-        category: "Congue diam congue",
-        price: 35,
-        brand: "Apple",
-        product_code: "Product 14",
-        reward_point: 1,
-        avaiblity: true,
-        inCart: false,
-        best_seller: false,
-        qty: 1,
-        related_products: [
-            {
-                id: 4
-            },
-            {
-                id: 3
-            },
-            {
-                id: 2
-            }
-        ],
-        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details: `Sed ut perspiciatis unde omnis iste natus error sit
-        voluptatem accusantium doloremque laudantium, totam
-        rem aperiam, eaque ipsa quae ab illo inventore
-        veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas
-        sit aspernatur aut odit aut fugit, sed quia
-        consequuntur magni dolores eos qui ratione voluptatem
-        sequi nesciunt. Neque porro quisquam est, qui dolorem
-        ipsum quia dolor sit amet, consectetur, adipisci
-        velit, sed quia non numquam eius modi tempora incidunt
-        ut labore et dolore magnam aliquam quaerat voluptatem`,
-        related_imgs: [
-            {
-                img: "themes/images/ladies/cleyton-ewerton-W1oUUHqqwXw-unsplash.jpg"
-            }
-        ]
-    },
-    {
-        id: 6,
-        img: "themes/images/ladies/naeim-jafari-6Xai7XxOgBc-unsplash.jpg",
-        title: "Tempor sem sodales",
-        category: "Gravida placerat",
-        price: 61,
-        brand: "Apple",
-        product_code: "Product 14",
-        reward_point: 1,
-        avaiblity: true,
-        inCart: false,
-        best_seller: false,
-        qty: 1,
-        related_products: [
-            {
-                id: 4
-            },
-            {
-                id: 3
-            },
-            {
-                id: 2
-            }
-        ],
-        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details: `Sed ut perspiciatis unde omnis iste natus error sit
-        voluptatem accusantium doloremque laudantium, totam
-        rem aperiam, eaque ipsa quae ab illo inventore
-        veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas
-        sit aspernatur aut odit aut fugit, sed quia
-        consequuntur magni dolores eos qui ratione voluptatem
-        sequi nesciunt. Neque porro quisquam est, qui dolorem
-        ipsum quia dolor sit amet, consectetur, adipisci
-        velit, sed quia non numquam eius modi tempora incidunt
-        ut labore et dolore magnam aliquam quaerat voluptatem`,
-        related_imgs: [
-        ]
-    },
-    {
-        id: 7,
-        img: "themes/images/ladies/khaled-ghareeb-Oj4HsmI7JDk-unsplash.jpg",
-        title: "Quam ultrices rutrum",
-        category: "Orci et nisl iaculis",
-        price: 233,
-        brand: "Apple",
-        product_code: "Product 14",
-        reward_point: 1,
-        avaiblity: true,
-        inCart: false,
-        best_seller: false,
-        qty: 1,
-        related_products: [
-            {
-                id: 4
-            },
-            {
-                id: 3
-            },
-            {
-                id: 2
-            }
-        ],
-        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details: `Sed ut perspiciatis unde omnis iste natus error sit
-        voluptatem accusantium doloremque laudantium, totam
-        rem aperiam, eaque ipsa quae ab illo inventore
-        veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas
-        sit aspernatur aut odit aut fugit, sed quia
-        consequuntur magni dolores eos qui ratione voluptatem
-        sequi nesciunt. Neque porro quisquam est, qui dolorem
-        ipsum quia dolor sit amet, consectetur, adipisci
-        velit, sed quia non numquam eius modi tempora incidunt
-        ut labore et dolore magnam aliquam quaerat voluptatem`,
-        related_imgs: [
-            
-        ]
-    },
-    {
-        id: 8,
-        img: "themes/images/ladies/valerie-elash-o1Ic6JdypmA-unsplash.jpg",
-        title: "Tempor sem sodales",
-        category: "Urna nec lectus mollis",
-        price: 134,
-        brand: "Apple",
-        product_code: "Product 14",
-        reward_point: 1,
-        avaiblity: true,
-        inCart: false,
-        best_seller: false,
-        qty: 1,
-        related_products: [
-            {
-                id: 4
-            },
-            {
-                id: 3
-            },
-            {
-                id: 2
-            }
-        ],
-        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
-        details: `Sed ut perspiciatis unde omnis iste natus error sit
-        voluptatem accusantium doloremque laudantium, totam
-        rem aperiam, eaque ipsa quae ab illo inventore
-        veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas
-        sit aspernatur aut odit aut fugit, sed quia
-        consequuntur magni dolores eos qui ratione voluptatem
-        sequi nesciunt. Neque porro quisquam est, qui dolorem
-        ipsum quia dolor sit amet, consectetur, adipisci
-        velit, sed quia non numquam eius modi tempora incidunt
-        ut labore et dolore magnam aliquam quaerat voluptatem`,
-        related_imgs: [
-            
-        ]
-    },
-    {
-        id: 9,
-        img: "themes/images/ladies/meritt-thomas-MQ9U2GFnnDc-unsplash.jpg",
+        id: 48,
+        img: "themes/images/ladies/amir-taheri-aQJl3MO7iek-unsplash.jpg",
         title: "Luctus quam ultrices",
-        category: "Suspendisse aliquet",
+        category: "kids",
+        sub_category: "Red",
         price: 261,
         brand: "Apple",
         product_code: "Product 14",
@@ -359,15 +39,15 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            
+
         ]
     },
     {
-        id: 26,
-        img: "themes/images/ladies/ospan-ali-jg7910ihs7o-unsplash.jpg",
+        id: 49,
+        img: "themes/images/ladies/anastasiya-pavlova-8vCPJRwWShM-unsplash.jpg",
         title: "Luctus quam ultrices",
-        category: "woman",
-        sub_category:"Red",
+        category: "kids",
+        sub_category: "Red",
         price: 261,
         brand: "Apple",
         product_code: "Product 14",
@@ -400,15 +80,15 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            
+
         ]
     },
     {
-        id: 27,
-        img: "themes/images/ladies/ussama-azam-MeeZQN_R7Ig-unsplash.jpg",
+        id: 50,
+        img: "themes/images/ladies/annie-spratt-aRJGeiWYxX8-unsplash.jpg",
         title: "Luctus quam ultrices",
-        category: "woman",
-        sub_category:"Red",
+        category: "kids",
+        sub_category: "Red",
         price: 261,
         brand: "Apple",
         product_code: "Product 14",
@@ -441,15 +121,15 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            
+            { img: "themes/images/ladies/annie-spratt-blXnsgfPw94-unsplash.jpg" }
         ]
     },
     {
-        id: 28,
-        img: "themes/images/ladies/ussama-azam-Y8iFz1VamoA-unsplash.jpg",
+        id: 51,
+        img: "themes/images/ladies/annie-spratt-SUzV8ZCLsNQ-unsplash.jpg",
         title: "Luctus quam ultrices",
-        category: "woman",
-        sub_category:"Red",
+        category: "kids",
+        sub_category: "Red",
         price: 261,
         brand: "Apple",
         product_code: "Product 14",
@@ -482,15 +162,15 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            
+
         ]
     },
     {
-        id: 29,
-        img: "themes/images/ladies/vanessa-serpas-U0m4t8tD8Sk-unsplash.jpg",
+        id: 52,
+        img: "themes/images/ladies/arseny-togulev-OtDBA1br4CI-unsplash.jpg",
         title: "Luctus quam ultrices",
-        category: "woman",
-        sub_category:"Red",
+        category: "kids",
+        sub_category: "Red",
         price: 261,
         brand: "Apple",
         product_code: "Product 14",
@@ -523,15 +203,15 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            
+
         ]
     },
     {
-        id: 30,
-        img: "themes/images/ladies/h-f-e-co-cqgSaFgMSqg-unsplash.jpg",
+        id: 53,
+        img: "themes/images/ladies/ben-white-lVCHfXn3VME-unsplash.jpg",
         title: "Luctus quam ultrices",
-        category: "woman",
-        sub_category:"Red",
+        category: "kids",
+        sub_category: "Red",
         price: 261,
         brand: "Apple",
         product_code: "Product 14",
@@ -564,15 +244,15 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            
+
         ]
     },
     {
-        id: 31,
-        img: "themes/images/ladies/enzo-silva-wFOnmk-J_x4-unsplash.jpg",
+        id: 54,
+        img: "themes/images/ladies/ben-white-qDY9ahp0Mto-unsplash.jpg",
         title: "Luctus quam ultrices",
-        category: "woman",
-        sub_category:"Red",
+        category: "kids",
+        sub_category: "Red",
         price: 261,
         brand: "Apple",
         product_code: "Product 14",
@@ -605,15 +285,15 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            
+
         ]
     },
     {
-        id: 32,
-        img: "themes/images/ladies/dei-r-DWG7pEgw24U-unsplash.jpg",
+        id: 55,
+        img: "themes/images/ladies/cristian-newman-NV_IPwv0Saw-unsplash.jpg",
         title: "Luctus quam ultrices",
-        category: "woman",
-        sub_category:"Red",
+        category: "kids",
+        sub_category: "Red",
         price: 261,
         brand: "Apple",
         product_code: "Product 14",
@@ -646,7 +326,93 @@ export const newProducts: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            
+
+        ]
+    },
+    {
+        id: 56,
+        img: "themes/images/ladies/sweetgun-1vez4acOwf0-unsplash.jpg",
+        title: "Luctus quam ultrices",
+        category: "kids",
+        sub_category: "Red",
+        price: 261,
+        brand: "Apple",
+        product_code: "Product 14",
+        reward_point: 1,
+        avaiblity: true,
+        inCart: false,
+        best_seller: false,
+        qty: 1,
+        related_products: [
+            {
+                id: 4
+            },
+            {
+                id: 3
+            },
+            {
+                id: 2
+            }
+        ],
+        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
+        details: `Sed ut perspiciatis unde omnis iste natus error sit
+        voluptatem accusantium doloremque laudantium, totam
+        rem aperiam, eaque ipsa quae ab illo inventore
+        veritatis et quasi architecto beatae vitae dicta sunt
+        explicabo. Nemo enim ipsam voluptatem quia voluptas
+        sit aspernatur aut odit aut fugit, sed quia
+        consequuntur magni dolores eos qui ratione voluptatem
+        sequi nesciunt. Neque porro quisquam est, qui dolorem
+        ipsum quia dolor sit amet, consectetur, adipisci
+        velit, sed quia non numquam eius modi tempora incidunt
+        ut labore et dolore magnam aliquam quaerat voluptatem`,
+        related_imgs: [
+            { img: "themes/images/ladies/sweetgun-b0cDO7SzSII-unsplash.jpg" },
+            { img: "themes/images/ladies/sweetgun-oSp3GJWn044-unsplash.jpg" },
+        ]
+    },
+    {
+        id: 57,
+        img: "themes/images/ladies/taylor-smith-m6F81ANQzvo-unsplash.jpg",
+        title: "Luctus quam ultrices",
+        category: "kids",
+        sub_category: "Red",
+        price: 261,
+        brand: "Apple",
+        product_code: "Product 14",
+        reward_point: 1,
+        avaiblity: true,
+        inCart: false,
+        best_seller: false,
+        qty: 1,
+        related_products: [
+            {
+                id: 4
+            },
+            {
+                id: 3
+            },
+            {
+                id: 2
+            }
+        ],
+        addition_information: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur sed alias dolores repellat vero quaerat quidem aliquam officia aliquid. Cumque ab nam doloremque praesentium labore possimus officiis error quos. Mollitia veritatis inventore earum ea molestias enim sint animi facere odit? Ipsa quidem explicabo quia minima dolor est nobis earum omnis. Facere doloribus cum nesciunt eaque numquam deserunt neque. Assumenda dolor labore nesciunt ratione, consequuntur quis doloremque iusto voluptatem repudiandae delectus, voluptas, atque aspernatur illum fuga. Officia, explicabo. Expedita ex ducimus rem, porro necessitatibus ad animi consectetur, quibusdam voluptates tenetur laudantium quidem quos illo fuga excepturi molestias sit, vel distinctio.`,
+        details: `Sed ut perspiciatis unde omnis iste natus error sit
+        voluptatem accusantium doloremque laudantium, totam
+        rem aperiam, eaque ipsa quae ab illo inventore
+        veritatis et quasi architecto beatae vitae dicta sunt
+        explicabo. Nemo enim ipsam voluptatem quia voluptas
+        sit aspernatur aut odit aut fugit, sed quia
+        consequuntur magni dolores eos qui ratione voluptatem
+        sequi nesciunt. Neque porro quisquam est, qui dolorem
+        ipsum quia dolor sit amet, consectetur, adipisci
+        velit, sed quia non numquam eius modi tempora incidunt
+        ut labore et dolore magnam aliquam quaerat voluptatem`,
+        related_imgs: [
+            { img: "themes/images/ladies/taylor-smith-Mw9TO8Wbz8A-unsplash.jpg" },
+            { img: "themes/images/ladies/taylor-smith-TgJoOJGg3TE-unsplash.jpg" },
+            { img: "themes/images/ladies/taylor-smith-VmgXOXLT3pc-unsplash.jpg" },
+            { img: "themes/images/ladies/taylor-smith-WUhd3bx-6IM-unsplash.jpg" },
         ]
     },
 ]

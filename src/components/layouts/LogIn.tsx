@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { AuthContext, authContext } from "../../contexts/authContext";
 import { LOG_IN } from "../../typesOfReducers/typesOfAuthReducer";
 
@@ -126,16 +126,6 @@ const LogIn: React.FC = (): JSX.Element => {
               value="Sign into your account"
             />
             <hr />
-            <p className="reset">
-              Recover your
-              <Link
-                tabIndex={4}
-                to="#"
-                title="Recover your username or password"
-              >
-                username or password
-              </Link>
-            </p>
           </div>
         </fieldset>
       </form>

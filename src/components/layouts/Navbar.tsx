@@ -11,7 +11,7 @@ const Navbar: React.FC = (): JSX.Element => {
         <nav id="menu" className="pull-right">
           <ul>
             <li>
-              <Link to="/product">Woman</Link>
+              <Link to="/product/women">Woman</Link>
               <ul>
                 <li>
                   <Link to="/product/red">Red</Link>
@@ -28,30 +28,13 @@ const Navbar: React.FC = (): JSX.Element => {
               </ul>
             </li>
             <li>
-              <Link to="/product">Man</Link>
+              <Link to="/product/men">Man</Link>
             </li>
             <li>
-              <Link to="/product">Sport</Link>
-              <ul>
-                <li>
-                  <Link to="/product">Gifts and Tech</Link>
-                </li>
-                <li>
-                  <Link to="/product">Ties and Hats</Link>
-                </li>
-                <li>
-                  <Link to="/product">Cold Weather</Link>
-                </li>
-              </ul>
+              <Link to="/product/kids">Kids</Link>
             </li>
             <li>
-              <Link to="/product">Hangbag</Link>
-            </li>
-            <li>
-              <Link to="/product">Best Seller</Link>
-            </li>
-            <li>
-              <Link to="/product">Top Seller</Link>
+              <Link to="/bestseller">Best Seller</Link>
             </li>
           </ul>
         </nav>

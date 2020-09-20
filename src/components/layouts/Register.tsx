@@ -189,12 +189,6 @@ const Register: React.FC = (): JSX.Element => {
               />
             </div>
           </div>
-          <div className="control-group">
-            <p>
-              Now that we know who you are. I'm not a mistake! In a comic, you
-              know how you can tell who the arch-villain's going to be?
-            </p>
-          </div>
           <hr />
           <div className="actions">
             <input

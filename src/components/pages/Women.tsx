@@ -7,25 +7,22 @@ import SubCatergories from "../layouts/SubCatergories";
 import { GlobalContext, gloabalContext } from "../../contexts/globalContext";
 import { Link } from "react-router-dom";
 
-const Red: React.FC = (): JSX.Element => {
+const Women: React.FC = (): JSX.Element => {
   const products = React.useContext<gloabalContext>(GlobalContext);
   const [currentPage, setCurrentPage] = React.useState(1);
   const [productPerPage] = React.useState(9);
-  const redProducts = [
-    ...products.products.filter(
-      (product) =>
-        product.sub_category === "Red" && product.category === "woman"
-    ),
+  const whiteProducts = [
+    ...products.products.filter((product) => product.category === "woman"),
   ];
   const pagenumbers = [];
   const indexOfLastProducts = currentPage * productPerPage;
   const indexOfFirstProducts = indexOfLastProducts - productPerPage;
-  const currentProduct = redProducts.slice(
+  const currentProduct = whiteProducts.slice(
     indexOfFirstProducts,
     indexOfLastProducts
   );
 
-  for (let i = 1; i <= Math.ceil(redProducts.length / productPerPage); i++) {
+  for (let i = 1; i <= Math.ceil(whiteProducts.length / productPerPage); i++) {
     pagenumbers.push(i);
   }
   return (
@@ -36,7 +33,6 @@ const Red: React.FC = (): JSX.Element => {
           <div className="span9">
             <ul className="thumbnails listing-products">
               {currentProduct.map((newProduct) =>
-                newProduct.sub_category === "Red" &&
                 newProduct.category === "woman" ? (
                   <li className="span3" key={newProduct.id}>
                     <div className="product-box">
@@ -85,7 +81,7 @@ const Red: React.FC = (): JSX.Element => {
                   </li>
                 ))}
                 {currentPage <
-                Math.ceil(redProducts.length / productPerPage) ? (
+                Math.ceil(whiteProducts.length / productPerPage) ? (
                   <li>
                     <Link
                       onClick={() => setCurrentPage(currentPage + 1)}
@@ -113,4 +109,4 @@ const Red: React.FC = (): JSX.Element => {
   );
 };
 
-export default Red;
+export default Women;

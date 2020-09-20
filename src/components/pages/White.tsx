@@ -12,7 +12,10 @@ const White: React.FC = (): JSX.Element => {
   const [currentPage, setCurrentPage] = React.useState(1);
   const [productPerPage] = React.useState(9);
   const whiteProducts = [
-    ...products.products.filter((product) => product.category === "White"),
+    ...products.products.filter(
+      (product) =>
+        product.sub_category === "White" && product.category === "woman"
+    ),
   ];
   const pagenumbers = [];
   const indexOfLastProducts = currentPage * productPerPage;
@@ -33,7 +36,8 @@ const White: React.FC = (): JSX.Element => {
           <div className="span9">
             <ul className="thumbnails listing-products">
               {currentProduct.map((newProduct) =>
-                newProduct.category === "White" ? (
+                newProduct.sub_category === "White" &&
+                newProduct.category === "woman" ? (
                   <li className="span3" key={newProduct.id}>
                     <div className="product-box">
                       <span className="sale_tag"></span>

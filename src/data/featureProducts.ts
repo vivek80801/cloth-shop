@@ -15,6 +15,7 @@ export interface featureProducts {
     best_seller: boolean,
     related_imgs: relatedImgs[],
     related_products: relatedProducts[]
+    sub_category?: string
 }
 
 interface relatedImgs {
@@ -64,7 +65,7 @@ export const saleTags: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            
+
         ]
     },
     {
@@ -149,7 +150,7 @@ export const saleTags: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            
+
         ]
     },
     {
@@ -189,7 +190,7 @@ export const saleTags: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            
+
         ]
     },
 ]
@@ -232,7 +233,7 @@ export const products: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            
+
         ]
     },
     {
@@ -272,7 +273,7 @@ export const products: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            
+
         ]
     },
     {
@@ -354,7 +355,7 @@ export const products: featureProducts[] = [
         velit, sed quia non numquam eius modi tempora incidunt
         ut labore et dolore magnam aliquam quaerat voluptatem`,
         related_imgs: [
-            
+
         ]
 
     },

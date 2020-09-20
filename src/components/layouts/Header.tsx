@@ -10,9 +10,6 @@ const Header: React.FC = (): JSX.Element => {
         <div className="account pull-left">
           <ul className="user-menu">
             <li>
-              <Link to="/">My Account</Link>
-            </li>
-            <li>
               <Link to="/cart">Your Cart</Link>
             </li>
             <li>
