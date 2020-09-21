@@ -1,0 +1,6 @@
+.pull-right > img {
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  cursor: pointer;
+}

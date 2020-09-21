@@ -6,6 +6,7 @@ interface comment {
   comment: string,
   date: string,
 }
+export type Gender = "Male" | "Female";
 export interface user {
   id: string,
   name: string,
@@ -14,7 +15,9 @@ export interface user {
   auth: boolean,
   comments?: comment[],
   pursched_Products?: featureProducts[],
-  role?:string
+  role: string,
+  img?: string,
+  gender: Gender,
 }
 
 export const persons: user[] = [
@@ -24,7 +27,9 @@ export const persons: user[] = [
     password: "vivek",
     email: "vivek@gmail.com",
     auth: false,
-    role:"admin"
+    role: "admin",
+    img: "../themes/images/users/imansyah-muhamad-putera-n4KewLKFOZw-unsplash.jpg",
+    gender: "Male"
   },
   {
     id: v4(),
@@ -32,7 +37,9 @@ export const persons: user[] = [
     password: "root",
     email: "root@gmail.com",
     auth: false,
-    role:"admin"
+    role: "admin",
+    img: "../themes/images/users/guillaume-issaly-cKuMOZ1-EKQ-unsplash.jpg",
+    gender: "Male"
   },
   {
     id: v4(),
@@ -40,7 +47,9 @@ export const persons: user[] = [
     password: "sohan",
     email: "sohan@gmail.com",
     auth: false,
-    role:"user"
+    role: "user",
+    img: "../themes/images/users/ludovic-migneault-5xbCj_VWKcs-unsplash.jpg",
+    gender: "Male"
   },
   {
     id: v4(),
@@ -48,8 +57,9 @@ export const persons: user[] = [
     password: "rohan",
     email: "rohan@gmail.com",
     auth: false,
-    role:"user"
-
+    role: "user",
+    img: "../themes/images/users/samuel-raita-RiDxDgHg7pw-unsplash.jpg",
+    gender: "Male"
   },
   {
     id: v4(),
@@ -57,15 +67,19 @@ export const persons: user[] = [
     password: "mohan",
     email: "mohan@gmail.com",
     auth: false,
-    role:"user"
+    role: "user",
+    img: "../themes/images/users/ludovic-migneault-4uj3iZ5m084-unsplash.jpg",
+    gender: "Male"
   },
   {
     id: v4(),
-    name: "mohit",
-    password: "mohit",
-    email: "mohit@gmail.com",
+    name: "radha",
+    password: "radha",
+    email: "radha@gmail.com",
     auth: false,
-    role:"moderator"
+    role: "moderator",
+    img: "../themes/images/users/taylor-hernandez-DLKR_x3T_7s-unsplash.jpg",
+    gender: "Female"
   },
   {
     id: v4(),
@@ -73,7 +87,9 @@ export const persons: user[] = [
     password: "sona",
     email: "sona@gmail.com",
     auth: false,
-    role:"user"
+    role: "user",
+    img: "../themes/images/users/theodoris-katis-sQ-fqITaFb8-unsplash.jpg",
+    gender: "Female"
   },
   {
     id: v4(),
@@ -81,14 +97,18 @@ export const persons: user[] = [
     password: "mona",
     email: "mona@gmail.com",
     auth: false,
-    role:"user"
+    role: "user",
+    img: "../themes/images/users/pexels-cole-keister-2388647.jpg",
+    gender: "Female"
   },
   {
     id: v4(),
-    name: "ram",
-    password: "ram",
-    email: "ram@gmail.com",
+    name: "sita",
+    password: "sita",
+    email: "sita@gmail.com",
     auth: false,
-    role:"user"
+    role: "user",
+    img: "../themes/images/users/andreea-maria-juganaru-Sd9AEzeBqgM-unsplash.jpg",
+    gender: "Female"
   },
 ];

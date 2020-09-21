@@ -2,9 +2,9 @@ import React from 'react';
 
 const Default: React.FC = ():JSX.Element => {
     return (
-        <div>
-        page not found 
-        </div>
+        <>
+        <img src="../themes/images/visuals-JpTY4gUviJM-unsplash.jpg" alt="404 page"/>
+        </>
     )
 }
 

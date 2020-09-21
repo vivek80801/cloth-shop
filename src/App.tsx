@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Navbar from "./components/layouts/Navbar";
 import Products from "./components/pages/Products";
@@ -18,8 +19,9 @@ import Green from "./components/pages/Green";
 import White from "./components/pages/White";
 import Women from "./components/pages/Women";
 import Men from "./components/pages/Men";
-import Kids   from "./components/pages/Kids";
+import Kids from "./components/pages/Kids";
 import BestSeller1 from "./components/pages/BestSeller";
+import Dashboard from "./components/pages/Dashboard";
 
 const App = () => (
   <>
@@ -34,6 +36,7 @@ const App = () => (
         <Route exact path="/product" component={Product} />
         <Route exact path="/register" component={CreateAccount} />
         <Route exact path="/bestseller" component={BestSeller1} />
+        <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/details/:id" component={Details} />
         <Route exact path="/product/women" component={Women} />
         <Route exact path="/product/men" component={Men} />

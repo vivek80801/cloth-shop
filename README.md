@@ -41,3 +41,9 @@ We are ready to start our server.
 npm run start
 ```
 Now, here we go. Our project is runing on `http://localhost:3000/`
+
+# Features
+
+For Now, You can `create an account`. you can `log in`.  You can `Add product to cart`. you can `filter products by diffrent category` like men, women, kids.
+
+Feature planing : My feature planing for this project is to create all the feature of ecommarce website. like user dashboard, admin area, user comments on products, user rating.
