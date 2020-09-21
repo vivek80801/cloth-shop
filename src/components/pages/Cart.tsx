@@ -3,7 +3,10 @@ import Manufactures from "../layouts/Manufactures";
 import SubCatergories from "../layouts/SubCatergories";
 import Randomize from "../layouts/Randomize";
 import SubHeader from "../layouts/SubHeader";
-import { QTY_OF_PRODUCT, REMOVE_FROM_CART } from "../../typesOfReducers/typesOfCartReducers";
+import {
+  QTY_OF_PRODUCT,
+  REMOVE_FROM_CART,
+} from "../../typesOfReducers/typesOfCartReducers";
 import { GlobalContext, gloabalContext } from "../../contexts/globalContext";
 import { Link } from "react-router-dom";
 
@@ -53,7 +56,12 @@ const Cart: React.FC = (): JSX.Element => {
                     <tr key={product.id}>
                       <td>
                         <button
-                          onClick={() => dispatch({type:REMOVE_FROM_CART, id:product.id})}
+                          onClick={() =>
+                            dispatch({
+                              type: REMOVE_FROM_CART,
+                              id: product.id,
+                            })
+                          }
                           className="btn btn-center"
                         >
                           &times;
@@ -61,7 +69,7 @@ const Cart: React.FC = (): JSX.Element => {
                       </td>
                       <td>
                         <Link to={`/details/${product.id}`}>
-                          <img alt="" src={`../${product.img}`} />
+                          <img alt={product.title} src={`../${product.img}`} />
                         </Link>
                       </td>
                       <td>{product.title}</td>

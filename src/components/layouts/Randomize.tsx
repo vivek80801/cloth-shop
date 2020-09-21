@@ -34,7 +34,7 @@ const Randomize: React.FC = (): JSX.Element => {
                     <div className="product-box">
                       <span className="sale_tag"></span>
                       <Link to={`/details/${product.id}`}>
-                        <img alt="" src={`../${product.img}`} />
+                        <img alt={product.title} src={`../${product.img}`} />
                       </Link>
                       <br />
                       <Link to={`/details/${product.id}`} className="title">
@@ -55,7 +55,7 @@ const Randomize: React.FC = (): JSX.Element => {
                   <li className="span3">
                     <div className="product-box">
                       <Link to={`/details/${product.id}`}>
-                        <img alt="" src={`../${product.img}`} />
+                        <img alt={product.title} src={`../${product.img}`} />
                       </Link>
                       <br />
                       <Link to={`/details/${product.id}`} className="title">

@@ -38,7 +38,7 @@ const Women: React.FC = (): JSX.Element => {
                     <div className="product-box">
                       <span className="sale_tag"></span>
                       <Link to={`/details/${newProduct.id}`}>
-                        <img alt="" src={`../${newProduct.img}`} />
+                        <img alt={newProduct.title} src={`../${newProduct.img}`} />
                       </Link>
                       <br />
                       <Link to={`/details/${newProduct.id}`} className="title">

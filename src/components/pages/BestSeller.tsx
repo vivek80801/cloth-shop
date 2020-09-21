@@ -22,7 +22,7 @@ const BestSeller1: React.FC = (): JSX.Element => {
                     <div className="product-box">
                       <span className="sale_tag"></span>
                       <Link to={`/details/${product.id}`}>
-                        <img alt="" src={product.img} title="BUY" />
+                        <img alt={product.title} src={product.img} title="BUY" />
                       </Link>
                       <br />
                       <Link to={`/details/${product.id}`} className="title">

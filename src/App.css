@@ -4,3 +4,30 @@
   border-radius: 50%;
   cursor: pointer;
 }
+.product-box img{
+  height: 40vh;
+  width: 40vh;
+}
+#top-bar{
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+#footer-bar{
+  position: sticky;
+  bottom: 2vh;
+}
+#copyright{
+  position: sticky;
+  bottom: 0;
+}
+._toggleMenu, .navbar{
+  position: sticky;
+  top: 12vh;
+  z-index: 4;
+}
+.main-menu{
+  position: sticky;
+  top: 6vh;
+  z-index: 4;
+}

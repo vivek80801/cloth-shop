@@ -59,7 +59,7 @@ const Details: React.FC<Props> = (props): JSX.Element => {
                                 className="thumbnail"
                                 data-fancybox-group="group1"
                               >
-                                <img src={`../${related_product.img}`} alt="" />
+                                <img src={`../${related_product.img}`} alt="related_product" />
                               </Link>
                             </li>
                           ) : null

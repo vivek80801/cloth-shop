@@ -55,7 +55,6 @@ const Contact: React.FC = (): JSX.Element => {
                   />
                 </div>
               </div>
-
               <div className="clearfix">
                 <label htmlFor="email">
                   <span>Email:</span>
@@ -72,7 +71,6 @@ const Contact: React.FC = (): JSX.Element => {
                   />
                 </div>
               </div>
-
               <div className="clearfix">
                 <label htmlFor="message">
                   <span>Message:</span>
@@ -87,7 +85,6 @@ const Contact: React.FC = (): JSX.Element => {
                   ></textarea>
                 </div>
               </div>
-
               <div className="actions">
                 <button type="submit" className="btn btn-inverse">
                   Send message

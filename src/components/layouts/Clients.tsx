@@ -10,32 +10,32 @@ const Clients: React.FC = (): JSX.Element => {
       <div className="row">
         <div className="span2">
           <Link to="/">
-            <img alt="" src="themes/images/clients/14.png" />
+            <img alt="client" src="themes/images/clients/14.png" />
           </Link>
         </div>
         <div className="span2">
           <Link to="/">
-            <img alt="" src="themes/images/clients/35.png" />
+            <img alt="client" src="themes/images/clients/35.png" />
           </Link>
         </div>
         <div className="span2">
           <Link to="/">
-            <img alt="" src="themes/images/clients/1.png" />
+            <img alt="client" src="themes/images/clients/1.png" />
           </Link>
         </div>
         <div className="span2">
           <Link to="/">
-            <img alt="" src="themes/images/clients/2.png" />
+            <img alt="client" src="themes/images/clients/2.png" />
           </Link>
         </div>
         <div className="span2">
           <Link to="/">
-            <img alt="" src="themes/images/clients/3.png" />
+            <img alt="client" src="themes/images/clients/3.png" />
           </Link>
         </div>
         <div className="span2">
           <Link to="/">
-            <img alt="" src="themes/images/clients/4.png" />
+            <img alt="client" src="themes/images/clients/4.png" />
           </Link>
         </div>
       </div>

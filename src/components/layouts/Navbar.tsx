@@ -6,7 +6,11 @@ const Navbar: React.FC = (): JSX.Element => {
     <section className="navbar main-menu">
       <div className="navbar-inner main-menu">
         <Link to="/" className="logo pull-left">
-          <img src="themes/images/logo.png" className="site_logo" alt="" />
+          <img
+            src="../themes/images/logo.png"
+            className="site_logo"
+            alt="logo"
+          />
         </Link>
         <nav id="menu" className="pull-right">
           <ul>

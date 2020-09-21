@@ -40,7 +40,7 @@ const Product: React.FC = (): JSX.Element => {
                   <div className="product-box">
                     <span className="sale_tag"></span>
                     <Link to={`/details/${newProduct.id}`}>
-                      <img alt="" src={newProduct.img} title="BUY" />
+                      <img alt={newProduct.title} src={newProduct.img} title="BUY" />
                     </Link>
                     <br />
                     <Link to={`/details/${newProduct.id}`} className="title">
