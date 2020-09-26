@@ -9,6 +9,8 @@
 
 > Pictures: [Unsplash](https://unsplash.com/ "Unsplash")
 
+> Avataes : [FreePik](https://www.freepik.com/free-photos-vectors/avatar-icons, "freepik")
+
 # Requirnments
 
 Make sure Nodejs install on your computer.
