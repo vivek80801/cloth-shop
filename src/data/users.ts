@@ -13,10 +13,10 @@ export interface user {
   email: string,
   password: string,
   auth: boolean,
-  comments?: comment[],
-  pursched_Products?: featureProducts[],
+  comments: comment[],
+  pursched_Products: featureProducts[],
   role: string,
-  img?: string,
+  img: string,
   gender: Gender,
 }
 
@@ -29,7 +29,9 @@ export const persons: user[] = [
     auth: false,
     role: "admin",
     img: "../themes/images/users/imansyah-muhamad-putera-n4KewLKFOZw-unsplash.jpg",
-    gender: "Male"
+    gender: "Male",
+    pursched_Products:[],
+    comments:[],
   },
   {
     id: v4(),
@@ -39,7 +41,9 @@ export const persons: user[] = [
     auth: false,
     role: "admin",
     img: "../themes/images/users/guillaume-issaly-cKuMOZ1-EKQ-unsplash.jpg",
-    gender: "Male"
+    gender: "Male",
+    pursched_Products:[],
+    comments:[]
   },
   {
     id: v4(),
@@ -49,7 +53,9 @@ export const persons: user[] = [
     auth: false,
     role: "user",
     img: "../themes/images/users/ludovic-migneault-5xbCj_VWKcs-unsplash.jpg",
-    gender: "Male"
+    gender: "Male",
+    pursched_Products:[],
+    comments:[]
   },
   {
     id: v4(),
@@ -59,7 +65,9 @@ export const persons: user[] = [
     auth: false,
     role: "user",
     img: "../themes/images/users/samuel-raita-RiDxDgHg7pw-unsplash.jpg",
-    gender: "Male"
+    gender: "Male",
+    pursched_Products:[],
+    comments:[]
   },
   {
     id: v4(),
@@ -69,7 +77,9 @@ export const persons: user[] = [
     auth: false,
     role: "user",
     img: "../themes/images/users/ludovic-migneault-4uj3iZ5m084-unsplash.jpg",
-    gender: "Male"
+    gender: "Male",
+    pursched_Products:[],
+    comments:[]
   },
   {
     id: v4(),
@@ -79,7 +89,9 @@ export const persons: user[] = [
     auth: false,
     role: "moderator",
     img: "../themes/images/users/taylor-hernandez-DLKR_x3T_7s-unsplash.jpg",
-    gender: "Female"
+    gender: "Female",
+    pursched_Products:[],
+    comments:[]
   },
   {
     id: v4(),
@@ -89,7 +101,9 @@ export const persons: user[] = [
     auth: false,
     role: "user",
     img: "../themes/images/users/theodoris-katis-sQ-fqITaFb8-unsplash.jpg",
-    gender: "Female"
+    gender: "Female",
+    pursched_Products:[],
+    comments:[]
   },
   {
     id: v4(),
@@ -99,7 +113,9 @@ export const persons: user[] = [
     auth: false,
     role: "user",
     img: "../themes/images/users/pexels-cole-keister-2388647.jpg",
-    gender: "Female"
+    gender: "Female",
+    pursched_Products:[],
+    comments:[]
   },
   {
     id: v4(),
@@ -109,6 +125,8 @@ export const persons: user[] = [
     auth: false,
     role: "user",
     img: "../themes/images/users/andreea-maria-juganaru-Sd9AEzeBqgM-unsplash.jpg",
-    gender: "Female"
+    gender: "Female",
+    pursched_Products:[],
+    comments:[]
   },
 ];

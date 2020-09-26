@@ -7,6 +7,8 @@ import {
   QTY_OF_PRODUCT,
   REMOVE_FROM_CART,
 } from "../../typesOfReducers/typesOfCartReducers";
+import { AuthContext, authContext } from "../../contexts/authContext";
+import { PURSCHE_PRODUCT } from "../../typesOfReducers/typesOfAuthReducer";
 import { GlobalContext, gloabalContext } from "../../contexts/globalContext";
 import { Link } from "react-router-dom";
 
@@ -14,11 +16,25 @@ const Cart: React.FC = (): JSX.Element => {
   const { products, dispatch } = React.useContext<gloabalContext>(
     GlobalContext
   );
+  const persons = React.useContext<authContext>(AuthContext);
+  const [purscheMessage, setPurscheMessage] = React.useState("");
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setPurscheMessage("");
+    }, 1000);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [purscheMessage]);
+
   let total = 0;
+  let auth = false;
+  let checkBtn = false;
+
   products.map((product) =>
     product.inCart ? (total += product.qty * product.price) : null
   );
-  let checkBtn = false;
   for (let i = 0; i < products.length; i++) {
     if (!products[i].inCart) {
     } else {
@@ -26,7 +42,12 @@ const Cart: React.FC = (): JSX.Element => {
       break;
     }
   }
-  console.log(checkBtn);
+  for (let i = 0; i < persons.users.length; i++) {
+    if (persons.users[i].auth) {
+      auth = true;
+      break;
+    }
+  }
 
   return (
     <>
@@ -106,9 +127,29 @@ const Cart: React.FC = (): JSX.Element => {
                 <tr>
                   {checkBtn ? (
                     <td>
-                      <Link to="/checkout">
-                        <button className="btn btn-inverse">checkout</button>
-                      </Link>
+                      {auth ? (
+                        <>
+                          <button
+                            className="btn btn-inverse"
+                            onClick={() => {
+                              setPurscheMessage("Products has been pursched.");
+                              return persons.dispatchAuth({
+                                type: PURSCHE_PRODUCT,
+                                allProducts: products,
+                              });
+                            }}
+                          >
+                            Pursche
+                          </button>
+                          <br/>
+                          {purscheMessage}
+                        </>
+                      ) : (
+                        <>
+                          To pursche our product. You need to Log in
+                          <Link to="/register">Log in</Link>
+                        </>
+                      )}
                     </td>
                   ) : null}
                 </tr>

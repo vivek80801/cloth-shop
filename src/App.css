@@ -31,3 +31,9 @@
   top: 6vh;
   z-index: 4;
 }
+.user-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

@@ -30,7 +30,7 @@ const Header: React.FC = (): JSX.Element => {
               <div className="account pull-right" key={user.id}>
                 <img
                   src={
-                    user.img
+                    user.img !== ""
                       ? user.img
                       : user.gender === "Male"
                       ? "../themes/images/users/male.svg"
@@ -38,20 +38,15 @@ const Header: React.FC = (): JSX.Element => {
                   }
                   alt={user.name}
                 />
-                <div 
-                className="user-options"
-                
-                >
-                <Link to="/dashboard">dashboard</Link>
-                <button
-                  onClick={() => {
-                    return person.dispatchAuth({ type: LOG_OUT });
-                  }}
-                >
-                  log out
-                </button>
+                <div className="user-options">
+                  <button
+                    onClick={() => {
+                      return person.dispatchAuth({ type: LOG_OUT });
+                    }}
+                  >
+                    log out
+                  </button>
                 </div>
-               
               </div>
             ) : null
           )}
