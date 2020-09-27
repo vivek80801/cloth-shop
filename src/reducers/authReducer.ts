@@ -34,9 +34,9 @@ export const authReducer = (state: user[] = persons, action: authAction) => {
         case UPDATE_ACCOUNT:
             copyState.map(user => {
                 if (action.id === user.id) {
-                    user.name = action.userName !== undefined ? action.userName : user.name
-                    user.password = action.password !== undefined ? action.password : user.password
-                    user.email = action.email !== undefined ? action.email : user.email;
+                    user.name = action.userName !== undefined && action.userName !== "" ? action.userName : user.name
+                    user.password = action.password !== undefined && action.password !== "" ? action.password : user.password
+                    user.email = action.email !== undefined && action.email !== "" ? action.email : user.email;
                     user.gender = action.gender !== undefined ? action.gender : user.gender
                 }
                 return user
@@ -44,7 +44,7 @@ export const authReducer = (state: user[] = persons, action: authAction) => {
             return copyState
 
         case REGISTER_ACCOUNT:
-            copyState.push({ id: v4(), name: action.userName !== undefined ? action.userName : "user", password: action.password !== undefined ? action.password : "user123", email: action.email !== undefined ? action.email : "user@gmail.com", auth: true, role: "user", gender: action.gender !== undefined ? action.gender : "Male", pursched_Products: [], comments: [], img: "" })
+            copyState.push({ id: v4(), name: action.userName !== undefined ? action.userName : "user", password: action.password !== undefined ? action.password : "user123", email: action.email !== undefined ? action.email : "user@gmail.com", auth: true, role: "user", gender: action.gender !== undefined ? action.gender : "Male", pursched_Products: [], comments: [], img:"" })
             return copyState
 
         case PURSCHE_PRODUCT:

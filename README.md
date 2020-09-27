@@ -2,6 +2,12 @@
 
 ## Live: [Live Example](https://vivek-cloth-shop.netlify.app "Cloth App")
 
+# Features
+
+For Now, You can `create an account`, `delete account`. you can `log in`.  You can `Add product to cart`. you can `filter products by diffrent category` like men, women, kids. certain pages will only be visible to to authenticated user like dashboard.
+
+Feature planing : My feature planing for this project is to create all the feature of ecommarce website. like user dashboard, admin area, user comments on products, user rating.
+
 # Credits
 > Hosting: [Netlify](https://www.netlify.app "Netlify")
 
@@ -10,42 +16,3 @@
 > Pictures: [Unsplash](https://unsplash.com/ "Unsplash")
 
 > Avataes : [FreePik](https://www.freepik.com/free-photos-vectors/avatar-icons, "freepik")
-
-# Requirnments
-
-Make sure Nodejs install on your computer.
-
-# Setup
-
-Make sure node `installed` in your local machine run `node --version` in your terminal
-
-```bash
-node --version
-```
-
-You will get `v12.8.3`.
-
-If you are getting something else. Go to [Nodejs.org](https://www.node.org, "nodejs.org").  And `install nodejs` in your local machine.
-
-Then `download this project` either by clicking on `code` on my [this repo](https://www.github.com/vivek80801/cloth-app "my repo") or `git clone https://github.com/vivek80801/cloth-app` then `navigate into downloded floder`
-
-```bash
-cd cloth-app
-```
-Nown time to `install` required dependecies.
-
-```bash
-npm install
-```
-We are ready to start our server.
-
-```bash
-npm run start
-```
-Now, here we go. Our project is runing on `http://localhost:3000/`
-
-# Features
-
-For Now, You can `create an account`. you can `log in`.  You can `Add product to cart`. you can `filter products by diffrent category` like men, women, kids.
-
-Feature planing : My feature planing for this project is to create all the feature of ecommarce website. like user dashboard, admin area, user comments on products, user rating.

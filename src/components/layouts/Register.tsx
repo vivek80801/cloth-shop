@@ -1,6 +1,7 @@
 import React from "react";
 import { AuthContext, authContext } from "../../contexts/authContext";
 import { REGISTER_ACCOUNT } from "../../typesOfReducers/typesOfAuthReducer";
+import { Gender } from "../../data/users";
 import { message } from "./LogIn";
 
 const Register: React.FC = (): JSX.Element => {
@@ -8,6 +9,7 @@ const Register: React.FC = (): JSX.Element => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [messages, setMessages] = React.useState<message[]>([]);
+  const [gender, setGender] = React.useState<Gender>("Male");
   const persons = React.useContext<authContext>(AuthContext);
 
   const emailCheck = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g;
@@ -142,6 +144,7 @@ const Register: React.FC = (): JSX.Element => {
               userName: userName,
               email: email,
               password: password,
+              gender: gender,
             });
           }
         }}
@@ -175,6 +178,22 @@ const Register: React.FC = (): JSX.Element => {
               />
             </div>
           </div>
+          <label className="radio" htmlFor="male">
+            <input
+              type="radio"
+              name="gender"
+              onChange={() => setGender("Male")}
+            />
+            Male
+          </label>
+          <label className="radio" htmlFor="female">
+            <input
+              type="radio"
+              name="gender"
+              onChange={() => setGender("Female")}
+            />
+            Female
+          </label>
           <div className="control-group">
             <label className="control-label">Password:</label>
             <div className="controls">
@@ -199,6 +218,7 @@ const Register: React.FC = (): JSX.Element => {
             />
           </div>
         </fieldset>
+      
       </form>
     </div>
   );

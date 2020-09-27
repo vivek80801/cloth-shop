@@ -22,6 +22,8 @@ import Men from "./components/pages/Men";
 import Kids from "./components/pages/Kids";
 import BestSeller1 from "./components/pages/BestSeller";
 import Dashboard from "./components/pages/Dashboard";
+import EditAccount from "./components/pages/EditAccount";
+import ShowUsers from './components/pages/ShowUsers'
 
 const App = () => (
   <>
@@ -37,6 +39,8 @@ const App = () => (
         <Route exact path="/register" component={CreateAccount} />
         <Route exact path="/bestseller" component={BestSeller1} />
         <Route exact path="/dashboard" component={Dashboard} />
+        <Route exact path="/editaccount" component={EditAccount} />
+        <Route exact path="/showusers" component={ShowUsers} />
         <Route exact path="/details/:id" component={Details} />
         <Route exact path="/product/women" component={Women} />
         <Route exact path="/product/men" component={Men} />
