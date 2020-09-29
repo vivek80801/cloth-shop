@@ -1,5 +1,5 @@
 import { persons, user } from "../data/users";
-import { LOG_IN, REGISTER_ACCOUNT, LOG_OUT, DELETE_ACCOUNT, UPDATE_ACCOUNT, PURSCHE_PRODUCT } from "../typesOfReducers/typesOfAuthReducer";
+import { LOG_IN, REGISTER_ACCOUNT, LOG_OUT, DELETE_ACCOUNT, UPDATE_ACCOUNT, PURSCHE_PRODUCT, REPORT_USER, UNREPORT_USER, BAN_USER, UNBAN_USER } from "../typesOfReducers/typesOfAuthReducer";
 import { v4 } from "uuid";
 import { Gender } from "../data/users";
 import { featureProducts } from "../data/featureProducts";
@@ -23,7 +23,7 @@ export const authReducer = (state: user[] = persons, action: authAction) => {
             return copyState
 
         case LOG_IN:
-            copyState.map(person => action.id === person.id ? person.auth = true : person.auth = false)
+            copyState.map(person => action.id === person.id && person.banned === false ? person.auth = true : person.auth = false)
             return copyState
 
         case DELETE_ACCOUNT:
@@ -44,7 +44,7 @@ export const authReducer = (state: user[] = persons, action: authAction) => {
             return copyState
 
         case REGISTER_ACCOUNT:
-            copyState.push({ id: v4(), name: action.userName !== undefined ? action.userName : "user", password: action.password !== undefined ? action.password : "user123", email: action.email !== undefined ? action.email : "user@gmail.com", auth: true, role: "user", gender: action.gender !== undefined ? action.gender : "Male", pursched_Products: [], comments: [], img:"" })
+            copyState.push({ id: v4(), name: action.userName !== undefined ? action.userName : "user", password: action.password !== undefined ? action.password : "user123", email: action.email !== undefined ? action.email : "user@gmail.com", auth: true, role: "user", gender: action.gender !== undefined ? action.gender : "Male", pursched_Products: [], comments: [], img: "", banned: false, reported: false })
             return copyState
 
         case PURSCHE_PRODUCT:
@@ -70,6 +70,22 @@ export const authReducer = (state: user[] = persons, action: authAction) => {
                     return product
                 })
             }
+            return copyState
+
+        case BAN_USER:
+            copyState.map(user => user.id === action.id ? user.banned = true : user)
+            return copyState
+
+        case UNBAN_USER:
+            copyState.map(user => user.id === action.id ? user.banned = false : user)
+            return copyState
+
+        case REPORT_USER:
+            copyState.map(user => user.id === action.id ? user.reported = true : user)
+            return copyState
+
+        case UNREPORT_USER:
+            copyState.map(user => user.id === action.id ? user.reported = false : user)
             return copyState
 
         default:

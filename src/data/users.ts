@@ -6,6 +6,7 @@ interface comment {
   comment: string,
   date: string,
 }
+
 export type Gender = "Male" | "Female";
 export interface user {
   id: string,
@@ -18,6 +19,8 @@ export interface user {
   role: string,
   img: string,
   gender: Gender,
+  banned:boolean,
+  reported:boolean
 }
 
 export const persons: user[] = [
@@ -32,6 +35,8 @@ export const persons: user[] = [
     gender: "Male",
     pursched_Products:[],
     comments:[],
+    banned:false,
+    reported:false,
   },
   {
     id: v4(),
@@ -43,7 +48,9 @@ export const persons: user[] = [
     img: "../themes/images/users/guillaume-issaly-cKuMOZ1-EKQ-unsplash.jpg",
     gender: "Male",
     pursched_Products:[],
-    comments:[]
+    comments:[],
+    banned:false,
+    reported:false,
   },
   {
     id: v4(),
@@ -55,7 +62,9 @@ export const persons: user[] = [
     img: "../themes/images/users/ludovic-migneault-5xbCj_VWKcs-unsplash.jpg",
     gender: "Male",
     pursched_Products:[],
-    comments:[]
+    comments:[],
+    banned:false,
+    reported:false,
   },
   {
     id: v4(),
@@ -67,7 +76,9 @@ export const persons: user[] = [
     img: "../themes/images/users/samuel-raita-RiDxDgHg7pw-unsplash.jpg",
     gender: "Male",
     pursched_Products:[],
-    comments:[]
+    comments:[],
+    banned:false,
+    reported:false
   },
   {
     id: v4(),
@@ -79,7 +90,9 @@ export const persons: user[] = [
     img: "../themes/images/users/ludovic-migneault-4uj3iZ5m084-unsplash.jpg",
     gender: "Male",
     pursched_Products:[],
-    comments:[]
+    comments:[],
+    banned:false,
+    reported:false,
   },
   {
     id: v4(),
@@ -91,7 +104,9 @@ export const persons: user[] = [
     img: "../themes/images/users/taylor-hernandez-DLKR_x3T_7s-unsplash.jpg",
     gender: "Female",
     pursched_Products:[],
-    comments:[]
+    comments:[],
+  banned:false,
+  reported:false
   },
   {
     id: v4(),
@@ -103,7 +118,9 @@ export const persons: user[] = [
     img: "../themes/images/users/theodoris-katis-sQ-fqITaFb8-unsplash.jpg",
     gender: "Female",
     pursched_Products:[],
-    comments:[]
+    comments:[],
+    banned:false,
+    reported:false,
   },
   {
     id: v4(),
@@ -115,7 +132,9 @@ export const persons: user[] = [
     img: "../themes/images/users/pexels-cole-keister-2388647.jpg",
     gender: "Female",
     pursched_Products:[],
-    comments:[]
+    comments:[],
+    banned:false,
+    reported:false,
   },
   {
     id: v4(),
@@ -127,6 +146,8 @@ export const persons: user[] = [
     img: "../themes/images/users/andreea-maria-juganaru-Sd9AEzeBqgM-unsplash.jpg",
     gender: "Female",
     pursched_Products:[],
-    comments:[]
+    comments:[],
+    banned:false,
+    reported:false,
   },
 ];

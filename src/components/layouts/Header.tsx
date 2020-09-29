@@ -17,9 +17,6 @@ const Header: React.FC = (): JSX.Element => {
               <Link to="/cart">Your Cart</Link>
             </li>
             <li>
-              <Link to="/checkout">Checkout</Link>
-            </li>
-            <li>
               <Link to="/register">Login</Link>
             </li>
           </ul>

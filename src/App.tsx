@@ -9,7 +9,6 @@ import Footer from "./components/layouts/Footer";
 import CopyRight from "./components/layouts/CopyRight";
 import Details from "./components/pages/Details";
 import Cart from "./components/pages/Cart";
-import CheckOut from "./components/pages/CheckOut";
 import Contact from "./components/pages/Contact";
 import Product from "./components/pages/Product";
 import CreateAccount from "./components/pages/CreateAccount";
@@ -23,9 +22,10 @@ import Kids from "./components/pages/Kids";
 import BestSeller1 from "./components/pages/BestSeller";
 import Dashboard from "./components/pages/Dashboard";
 import EditAccount from "./components/pages/EditAccount";
-import ShowUsers from './components/pages/ShowUsers'
+import ShowUsers from './components/pages/ShowUsers';
+import EditUser from "./components/pages/EditUser"
 
-const App = () => (
+const App: React.FC = ():JSX.Element => (
   <>
     <Header />
     <div id="wrapper" className="container">
@@ -33,7 +33,6 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Products} />
         <Route exact path="/cart" component={Cart} />
-        <Route exact path="/checkout" component={CheckOut} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/product" component={Product} />
         <Route exact path="/register" component={CreateAccount} />
@@ -41,6 +40,7 @@ const App = () => (
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/editaccount" component={EditAccount} />
         <Route exact path="/showusers" component={ShowUsers} />
+        <Route exact path="/editusers" component={EditUser} />
         <Route exact path="/details/:id" component={Details} />
         <Route exact path="/product/women" component={Women} />
         <Route exact path="/product/men" component={Men} />

@@ -146,7 +146,7 @@ const Cart: React.FC = (): JSX.Element => {
                         </>
                       ) : (
                         <>
-                          To pursche our product. You need to Log in
+                          To pursche our product. You need to 
                           <Link to="/register">Log in</Link>
                         </>
                       )}

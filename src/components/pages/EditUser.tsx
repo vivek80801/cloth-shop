@@ -3,21 +3,27 @@ import { AuthContext, authContext } from "../../contexts/authContext";
 import {
   REPORT_USER,
   UNREPORT_USER,
+  BAN_USER,
+  UNBAN_USER,
 } from "../../typesOfReducers/typesOfAuthReducer";
 
 const ShowUsers: React.FC = (): JSX.Element => {
   const persons = React.useContext<authContext>(AuthContext);
   let auth = false;
+  let admin = false;
   for (let i = 0; i < persons.users.length; i++) {
     if (persons.users[i].auth) {
       auth = true;
-      break;
+      if (persons.users[i].role === "admin") {
+        admin = true;
+        break;
+      }
     }
   }
 
   return (
     <>
-      {auth ? (
+      {auth && admin ? (
         <>
           <h1>Our Users</h1>
           {persons.users.map((user) => (
@@ -58,7 +64,24 @@ const ShowUsers: React.FC = (): JSX.Element => {
                     Report {user.name}
                   </button>
                 )}
-                <br/>
+                {user.banned ? (
+                  <button
+                    onClick={() =>
+                      persons.dispatchAuth({ type: UNBAN_USER, id: user.id })
+                    }
+                  >
+                    Un ban {user.name}
+                  </button>
+                ) : (
+                  <button
+                    onClick={() =>
+                      persons.dispatchAuth({ type: BAN_USER, id: user.id })
+                    }
+                  >
+                    Ban {user.name}
+                  </button>
+                )}
+                <br />
                 {user.comments.length > 0
                   ? user.comments.map((comment) => (
                       <div key={comment.product_id}>
@@ -88,7 +111,7 @@ const ShowUsers: React.FC = (): JSX.Element => {
         </>
       ) : (
         <>
-          <h1>You are not logged in</h1>
+          <h1>You are not admin. Only admin can see This page</h1>
         </>
       )}
     </>

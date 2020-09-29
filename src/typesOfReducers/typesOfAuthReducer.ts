@@ -7,3 +7,7 @@ export const PURSCHE_PRODUCT = "PURSCHE_PRODUCT";
 export const ADD_COMMENT = "ADD_COMMENT";
 export const REMOVE_COMMENT = "REMOVE_COMMENT";
 export const UPDATE_COMMENT = "UPDATE_COMMENT";
+export const REPORT_USER="REPORT_USER";
+export const UNREPORT_USER="UNREPORT_USER";
+export const BAN_USER="BAN_USER";
+export const UNBAN_USER="UNBAN_USER";

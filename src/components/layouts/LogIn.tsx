@@ -62,6 +62,12 @@ const LogIn: React.FC = (): JSX.Element => {
                 setUserName("");
                 setPassword("");
                 return messages;
+              } else if (users[i].banned) {
+                setMessages([
+                  ...messages,
+                  { msg: "Your account has been banned", err: true },
+                ]);
+                return messages;
               } else if (
                 users[i].name === userName &&
                 users[i].password === password
