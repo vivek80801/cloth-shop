@@ -63,16 +63,6 @@ const ShowUsers: React.FC = (): JSX.Element => {
                   </button>
                 )}
                 <br/>
-                {user.comments.length > 0
-                  ? user.comments.map((comment) => (
-                      <div key={comment.product_id}>
-                        Product id: {comment.product_id}
-                        Date: {comment.date}
-                        comment: {comment.comment}
-                      </div>
-                    ))
-                  : "No comments"}
-                <br />
                 {user.pursched_Products.length > 0
                   ? user.pursched_Products.map((pursched_Product) => (
                       <div key={pursched_Product.id}>

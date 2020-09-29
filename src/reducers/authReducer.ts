@@ -1,5 +1,5 @@
 import { persons, user } from "../data/users";
-import { LOG_IN, REGISTER_ACCOUNT, LOG_OUT, DELETE_ACCOUNT, UPDATE_ACCOUNT, PURSCHE_PRODUCT, REPORT_USER, UNREPORT_USER, BAN_USER, UNBAN_USER } from "../typesOfReducers/typesOfAuthReducer";
+import { LOG_IN, REGISTER_ACCOUNT, LOG_OUT, DELETE_ACCOUNT, UPDATE_ACCOUNT, PURSCHE_PRODUCT, REPORT_USER, UNREPORT_USER, BAN_USER, UNBAN_USER, } from "../typesOfReducers/typesOfAuthReducer";
 import { v4 } from "uuid";
 import { Gender } from "../data/users";
 import { featureProducts } from "../data/featureProducts";
@@ -12,6 +12,9 @@ export interface authAction {
     email?: string,
     password?: string,
     gender?: Gender,
+    product_id?: number,
+    comment?: string,
+    date?: string,
     allProducts?: featureProducts[],
 }
 
@@ -44,7 +47,7 @@ export const authReducer = (state: user[] = persons, action: authAction) => {
             return copyState
 
         case REGISTER_ACCOUNT:
-            copyState.push({ id: v4(), name: action.userName !== undefined ? action.userName : "user", password: action.password !== undefined ? action.password : "user123", email: action.email !== undefined ? action.email : "user@gmail.com", auth: true, role: "user", gender: action.gender !== undefined ? action.gender : "Male", pursched_Products: [], comments: [], img: "", banned: false, reported: false })
+            copyState.push({ id: v4(), name: action.userName !== undefined ? action.userName : "user", password: action.password !== undefined ? action.password : "user123", email: action.email !== undefined ? action.email : "user@gmail.com", auth: true, role: "user", gender: action.gender !== undefined ? action.gender : "Male", pursched_Products: [], img: "", banned: false, reported: false })
             return copyState
 
         case PURSCHE_PRODUCT:

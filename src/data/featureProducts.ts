@@ -72,7 +72,7 @@ export const saleTags: featureProducts[] = [
         id: 19,
         img: "themes/images/ladies/laura-chouette-79UccCHqTJA-unsplash.jpg",
         title: "Quis nostrud exerci tation",
-        category: "Quis nostrud",
+        category: "woman",
         price: 32.50,
         brand: "Apple",
         product_code: " Product 14",
@@ -81,6 +81,7 @@ export const saleTags: featureProducts[] = [
         inCart: false,
         best_seller: true,
         qty: 1,
+        sub_category: "White",
         related_products: [
             {
                 id: 4
@@ -157,7 +158,7 @@ export const saleTags: featureProducts[] = [
         id: 21,
         img: "themes/images/ladies/vladimir-fedotov-s76ACd3Am6A-unsplash.jpg",
         title: "You think fast",
-        category: "World once",
+        category: "woman",
         price: 31.45,
         brand: "Apple",
         product_code: " Product 14",
@@ -166,6 +167,7 @@ export const saleTags: featureProducts[] = [
         inCart: false,
         best_seller: true,
         qty: 1,
+        sub_category: "Black",
         related_products: [
             {
                 id: 4
@@ -200,7 +202,7 @@ export const products: featureProducts[] = [
         id: 22,
         img: "themes/images/ladies/rodolfo-marques-0j-y7NTkyKM-unsplash.jpg",
         title: "Know exactly",
-        category: "Quis nostrud",
+        category: "woman",
         price: 22.30,
         brand: "Apple",
         product_code: " Product 14",
@@ -209,6 +211,7 @@ export const products: featureProducts[] = [
         inCart: false,
         best_seller: false,
         qty: 1,
+        sub_category: "Black",
         related_products: [
             {
                 id: 4

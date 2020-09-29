@@ -44,7 +44,7 @@ const Footer: React.FC = (): JSX.Element => {
         </div>
         <div className="span5">
           <p className="logo">
-            <img src="themes/images/logo.png" className="site_logo" alt="logo" />
+            <img src="../themes/images/logo.png" className="site_logo" alt="logo" />
           </p>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting

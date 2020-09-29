@@ -1,9 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { AuthContext, authContext } from "../../contexts/authContext";
 
 const Navbar: React.FC = (): JSX.Element => {
+  const persons = React.useContext<authContext>(AuthContext);
+  let auth = false;
+  for (let i = 0; i < persons.users.length; i++) {
+    if (persons.users[i].auth) {
+      auth = true;
+      break;
+    }
+  }
   return (
-    <section className="navbar main-menu">
+    <section
+      className="navbar main-menu"
+      style={auth ? { top: "17vh" } : { top: "2vh" }}
+    >
       <div className="navbar-inner main-menu">
         <Link to="/" className="logo pull-left">
           <img

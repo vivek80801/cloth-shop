@@ -43,15 +43,6 @@ const Dashboard: React.FC = (): JSX.Element => {
                     Role:{" "}
                     {user.role === "user" ? "No Role Assing To You" : user.role}
                   </h3>
-                  <h3>
-                    {user.comments.length === 0
-                      ? "Comments: You did not comment on any product"
-                      : user.comments.map((comment) => (
-                          <li key={comment.product_id}>
-                            Comment:{comment.comment}
-                          </li>
-                        ))}
-                  </h3>
                   <div className="pursched-product">
                     {user.pursched_Products.length === 0 ? (
                       <h3>Pursches: You did not pursched anything </h3>
