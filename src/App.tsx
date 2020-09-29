@@ -24,6 +24,7 @@ import Dashboard from "./components/pages/Dashboard";
 import EditAccount from "./components/pages/EditAccount";
 import ShowUsers from './components/pages/ShowUsers';
 import EditUser from "./components/pages/EditUser"
+import EditProduct from "./components/pages/EditProduct"
 
 const App: React.FC = ():JSX.Element => (
   <>
@@ -41,6 +42,7 @@ const App: React.FC = ():JSX.Element => (
         <Route exact path="/editaccount" component={EditAccount} />
         <Route exact path="/showusers" component={ShowUsers} />
         <Route exact path="/editusers" component={EditUser} />
+        <Route exact path="/editproducts" component={EditProduct} />
         <Route exact path="/details/:id" component={Details} />
         <Route exact path="/product/women" component={Women} />
         <Route exact path="/product/men" component={Men} />

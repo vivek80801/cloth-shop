@@ -104,6 +104,11 @@ const Dashboard: React.FC = (): JSX.Element => {
                       <button>Edit Users</button>
                     </Link>
                   ) : null}
+                    {user.role === "admin" ? (
+                    <Link to="/editproducts">
+                      <button>Edit Products</button>
+                    </Link>
+                  ) : null}
                 </div>
               </div>
             ) : null

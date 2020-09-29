@@ -8,16 +8,20 @@ import {
 const ShowUsers: React.FC = (): JSX.Element => {
   const persons = React.useContext<authContext>(AuthContext);
   let auth = false;
+  let validPeople=false;
   for (let i = 0; i < persons.users.length; i++) {
     if (persons.users[i].auth) {
       auth = true;
-      break;
+      if (persons.users[i].role==="admin"|| persons.users[i].role==="moderator") {
+        validPeople=true;
+        break;
+      }
     }
   }
 
   return (
     <>
-      {auth ? (
+      {auth && validPeople ? (
         <>
           <h1>Our Users</h1>
           {persons.users.map((user) => (
@@ -88,7 +92,7 @@ const ShowUsers: React.FC = (): JSX.Element => {
         </>
       ) : (
         <>
-          <h1>You are not logged in</h1>
+          <h1>You are not valid user to see this</h1>
         </>
       )}
     </>
