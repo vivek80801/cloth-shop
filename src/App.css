@@ -13,10 +13,6 @@
   top: 0;
   z-index: 4;
 }
-#footer-bar{
-  position: sticky;
-  bottom: 2vh;
-}
 #copyright{
   position: sticky;
   bottom: 0;
