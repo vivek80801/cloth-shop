@@ -5,7 +5,7 @@ export const newProducts: featureProducts[] = [
         id: 1,
         img: "themes/images/ladies/masha-sidorova-5GIurP01pN8-unsplash.jpg",
         title: "Fusce id molestie massa",
-        category: "Phasellus consequat",
+        category: "woman",
         price: 341,
         brand: "Apple",
         product_code: "Product 14",
@@ -13,6 +13,7 @@ export const newProducts: featureProducts[] = [
         avaiblity: true,
         inCart: false,
         best_seller: false,
+        sub_category:"Black",
         qty: 1,
         related_products: [
             {
@@ -45,7 +46,7 @@ export const newProducts: featureProducts[] = [
         id: 2,
         img: "themes/images/ladies/alice-alinari-MS371wlcGPo-unsplash.jpg",
         title: "Praesent tempor sem",
-        category: "Erat gravida",
+        category: "woman",
         price: 28,
         brand: "Apple",
         product_code: "Product 14",
@@ -53,6 +54,7 @@ export const newProducts: featureProducts[] = [
         avaiblity: true,
         inCart: false,
         best_seller: false,
+        sub_category:"White",
         qty: 1,
         related_products: [
             {
@@ -85,7 +87,7 @@ export const newProducts: featureProducts[] = [
         id: 3,
         img: "themes/images/ladies/dmitry-vechorko-50uhRqRVJM8-unsplash.jpg",
         title: "Wuam ultrices rutrum",
-        category: "Suspendisse aliquet",
+        category: "woman",
         price: 341,
         brand: "Apple",
         product_code: "Product 14",
@@ -93,6 +95,7 @@ export const newProducts: featureProducts[] = [
         avaiblity: true,
         inCart: false,
         best_seller: false,
+        sub_category:"White",
         qty: 1,
         related_products: [
             {
@@ -125,7 +128,8 @@ export const newProducts: featureProducts[] = [
         id: 4,
         img: "themes/images/ladies/sergio-souza-5WsBXDhI5LE-unsplash.jpg",
         title: "Praesent tempor sem sodales",
-        category: "Nam imperdiet",
+        category: "woman",
+        sub_category:"Green",
         price: 49,
         brand: "Apple",
         product_code: "Product 14",
@@ -165,7 +169,7 @@ export const newProducts: featureProducts[] = [
         id: 5,
         img: "themes/images/ladies/cleyton-ewerton-R0qWkze6t3A-unsplash.jpg",
         title: "Fusce id molestie massa",
-        category: "Congue diam congue",
+        category: "woman",
         price: 35,
         brand: "Apple",
         product_code: "Product 14",
@@ -173,6 +177,7 @@ export const newProducts: featureProducts[] = [
         avaiblity: true,
         inCart: false,
         best_seller: false,
+        sub_category:"Black",
         qty: 1,
         related_products: [
             {
@@ -207,7 +212,7 @@ export const newProducts: featureProducts[] = [
         id: 6,
         img: "themes/images/ladies/naeim-jafari-6Xai7XxOgBc-unsplash.jpg",
         title: "Tempor sem sodales",
-        category: "Gravida placerat",
+        category: "woman",
         price: 61,
         brand: "Apple",
         product_code: "Product 14",
@@ -215,6 +220,7 @@ export const newProducts: featureProducts[] = [
         avaiblity: true,
         inCart: false,
         best_seller: false,
+        sub_category:"Red",
         qty: 1,
         related_products: [
             {
@@ -246,7 +252,7 @@ export const newProducts: featureProducts[] = [
         id: 7,
         img: "themes/images/ladies/khaled-ghareeb-Oj4HsmI7JDk-unsplash.jpg",
         title: "Quam ultrices rutrum",
-        category: "Orci et nisl iaculis",
+        category: "woman",
         price: 233,
         brand: "Apple",
         product_code: "Product 14",
@@ -254,6 +260,7 @@ export const newProducts: featureProducts[] = [
         avaiblity: true,
         inCart: false,
         best_seller: false,
+        sub_category:"Black",
         qty: 1,
         related_products: [
             {
@@ -286,7 +293,8 @@ export const newProducts: featureProducts[] = [
         id: 8,
         img: "themes/images/ladies/valerie-elash-o1Ic6JdypmA-unsplash.jpg",
         title: "Tempor sem sodales",
-        category: "Urna nec lectus mollis",
+        category: "woman",
+        sub_category:"White",
         price: 134,
         brand: "Apple",
         product_code: "Product 14",
@@ -613,7 +621,7 @@ export const newProducts: featureProducts[] = [
         img: "themes/images/ladies/dei-r-DWG7pEgw24U-unsplash.jpg",
         title: "Luctus quam ultrices",
         category: "woman",
-        sub_category:"Red",
+        sub_category:"Black",
         price: 261,
         brand: "Apple",
         product_code: "Product 14",

@@ -31,7 +31,7 @@ export const saleTags: featureProducts[] = [
         id: 18,
         img: "themes/images/ladies/10.jpg",
         title: "Ut wisi enim ad",
-        category: "Commodo consequat",
+        category: "woman",
         price: 17.25,
         brand: "Google",
         product_code: " Product 14",
@@ -39,6 +39,7 @@ export const saleTags: featureProducts[] = [
         avaiblity: true,
         inCart: false,
         best_seller: true,
+        sub_category:"White",
         qty: 1,
         related_products: [
             {
@@ -118,7 +119,7 @@ export const saleTags: featureProducts[] = [
         id: 20,
         img: "themes/images/ladies/engin-akyurt-N7YaZf7szz0-unsplash.jpg",
         title: "Know exactly turned",
-        category: " Quis nostrud",
+        category: "woman",
         price: 14.20,
         brand: "Apple",
         product_code: " Product 14",
@@ -126,6 +127,7 @@ export const saleTags: featureProducts[] = [
         avaiblity: true,
         inCart: false,
         best_seller: true,
+        sub_category:"White",
         qty: 1,
         related_products: [
             {
@@ -243,7 +245,7 @@ export const products: featureProducts[] = [
         id: 23,
         img: "themes/images/ladies/anna1991anna-w4Wv58_cBXM-unsplash.jpg",
         title: "Ut wisi enim ad",
-        category: "Commodo consequat",
+        category: "woman",
         price: 40.25,
         brand: "Apple",
         product_code: " Product 14",
@@ -251,6 +253,7 @@ export const products: featureProducts[] = [
         avaiblity: true,
         inCart: false,
         best_seller: false,
+        sub_category:"White",
         qty: 1,
         related_products: [
             {
@@ -283,7 +286,7 @@ export const products: featureProducts[] = [
         id: 24,
         img: "themes/images/ladies/febrian-zakaria-hx-8B01BQ6Q-unsplash.jpg",
         title: "You think water",
-        category: "World once",
+        category: "woman",
         price: 10.45,
         brand: "Apple",
         product_code: " Product 14",
@@ -291,6 +294,7 @@ export const products: featureProducts[] = [
         avaiblity: true,
         inCart: false,
         best_seller: false,
+        sub_category:"Black",
         qty: 1,
         related_products: [
             {
@@ -325,7 +329,8 @@ export const products: featureProducts[] = [
         id: 25,
         img: "themes/images/ladies/p-t-ohehdpoIKwI-unsplash.jpg",
         title: " Quis nostrud exerci",
-        category: "Quis nostrud",
+        category: "woman",
+        sub_category:"Red",
         price: 35.50,
         brand: "Apple",
         product_code: " Product 14",
