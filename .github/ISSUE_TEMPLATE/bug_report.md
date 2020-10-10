@@ -35,4 +35,8 @@ If applicable, add screenshots to help explain your problem.
  - Version [e.g. 22]
 
 **Additional context**
+<<<<<<< HEAD
 Add any other context about the problem here.
+=======
+Add any other context about the problem here.
+>>>>>>> f3edc146fcdb02a4794a7acdc481bb6b52986463

@@ -9,6 +9,7 @@ For Now, You can `create an account`, `delete account`. you can `log in`.  You c
 Feature planing : My feature planing for this project is to create all the feature of ecommarce website. like user dashboard, admin area, user comments on products, user rating.
 
 # Credits
+
 > Hosting: [Netlify](https://www.netlify.app "Netlify")
 
 > Theme: [Shoper Theme](https://www.free-css.com/assets/files/free-css-templates/preview/page201/shopper/ "Shoper Theme")
