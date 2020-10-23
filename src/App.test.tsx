@@ -1,18 +1,24 @@
 import React from "react";
-import { render, cleanup, fireEvent } from "@testing-library/react";
+import { render, cleanup } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
+import { AuthProvider } from "./contexts/authContext";
+import { GlobalProvider } from "./contexts/globalContext";
 import App from "./App";
 
 cleanup();
 
-describe("render labour components", () => {
-  test("should render labour components", () => {
-  
-    const { getByText, debug } = render(
+describe("render app", () => {
+  test("should render Products components", () => {
+    const { getByText } = render(
       <Router>
-        <App />
+        <AuthProvider>
+          <GlobalProvider>
+            <App />
+          </GlobalProvider>
+        </AuthProvider>
       </Router>
     );
-    // debug();
+    const man = getByText("Man");
+    expect(man).toBeInTheDocument();
   });
 });
